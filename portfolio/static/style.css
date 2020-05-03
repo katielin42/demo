@@ -68,7 +68,7 @@ h1{
 
 }
 .footer{
-  background: #152F4F;
+  background: #152F4F !important;
   color:white;
 
   .links{
