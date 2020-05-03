@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-import jobs.views
+import portfolio.views
+from portfolio import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', jobs.views.home, name= 'home'),
-    path('team/', jobs.views.team, name= 'team'),
+    path('', views.home, name= 'home'),
+    path('team/', views.team, name= 'team'),
     path('blog/', include('blog.urls')), # groups all urls with blog/ to be sent to the blog app
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
