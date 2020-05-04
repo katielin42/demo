@@ -20,9 +20,11 @@ from django.conf.urls.static import static
 import portfolio.views
 from portfolio import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name= 'home'),
     path('team/', views.team, name= 'team'),
-    path('blog/', include('blog.urls')), # groups all urls with blog/ to be sent to the blog app
+    # path('blog/', include('blog.urls')), # groups all urls with newsletter/ to be sent to the blog app
+    path('newsletter/', include('newsletter.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

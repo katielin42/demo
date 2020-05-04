@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
-<header>
-    <meta charset="UTF-8">
-    <link href="team.css" rel="stylesheet">
-
-    <title>Our Team</title>
-</header>
 {% extends 'base.html' %}
+{% load static %}
+
+
+
 {% block content %}
+<html>
+<header>
+    <title>Our Team</title>
+
+
+</header>
+  <link href="{% static 'team.css' %}" rel="stylesheet">
 <main>
 
-<div class="py-5 team4 footer">
+<div class="py-5 team4 ">
   <div class="container">
     <div class="row justify-content-center mb-4">
       <div class="col-md-7 text-center">
@@ -20,6 +21,7 @@
         <h6 class="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
       </div>
     </div>
+    <div class="space"></div>
     <div class="row">
       <!-- column  -->
       <div class="col-lg-3 mb-4">
@@ -184,4 +186,5 @@
 
 
 </html>
+
 

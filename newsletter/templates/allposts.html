@@ -1,10 +1,37 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
 <html lang="en">
-<head>
+<header>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <link href="{% static 'allposts.css' %}" rel="stylesheet">
 
-</body>
+    <title>Newsletter</title>
+</header>
+
+
+<main>
+    <div class="container" style="width:55%"> <!-- spacing -->
+        <br/>
+        <br/>
+        <h2>Latest Newsletters</h2>
+        <hr/>
+        <div class="row ">
+            {% for post in posts.all %}
+
+            <div class="onepost">
+                <h3 style="padding-left: 20px; padding-top: 5px;">{{post.title}}</h2>
+                <p style="padding-left: 20px; padding-right: 40px">{{post.publication.date}} </p>
+
+                <p class="blurb">{{post.summary}}</p>
+                <a href="{% url 'detail' post.id %}"></a>
+            </div>
+            <br/>
+
+            {% endfor %}
+
+        </div>
+    </div>
+</main>
+{% endblock %}
 </html>

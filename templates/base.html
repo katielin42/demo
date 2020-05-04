@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <link rel="stylesheet" href="static/style.css"/>
+
 
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
@@ -27,6 +27,8 @@
     <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#563d7c">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="album.css" rel="stylesheet">
+
 
 
     <style>
@@ -47,7 +49,8 @@
 
     </style>
     <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
+    <link href="{% static 'basetemplate.css' %}" rel="stylesheet">
+
 </head>
 
 <header>
@@ -59,10 +62,10 @@
         </button>
         <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto" style="padding-right:200px">
-                <a class="nav-item nav-link" href="#">Home</a>
+                <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
                 <a class="nav-item nav-link" href="#">FAQ</a>
                 <a class="nav-item nav-link" href="#">Event</a>
-                <a class="nav-item nav-link" href="{% url 'blog' %}">Newsletter</a>
+                <a class="nav-item nav-link" href="{% url 'allposts' %}">Newsletter</a>
                 <a class="nav-item nav-link" target="_blank" href="https://eeclubmerch.square.site/s/shop">Merch</a>
                 <a class="nav-item nav-link" href="{% url 'team' %}">Our Team</a>
             </div>
@@ -77,7 +80,7 @@
 
 </main>
 
-<div class="mt-5 pt-5 pb-5 footer" style="background-color:#152F4F;">
+<div class="mt-5 pt-5 pb-5 footer" >
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-xs-12 about-company">

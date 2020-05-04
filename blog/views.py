@@ -8,23 +8,22 @@ from .models import Blog
 
 def allblogs(request):
     blogs = Blog.objects
-    return render(request, 'blog/allblogs.html', {"blogs": blogs})
-
+    return render(request, 'allblogs.html', {"blogs": blogs})
 
 def render_to_response(param):
     pass
 
 
 def detail(request, blog_id):
-    '''
+    
     detail_blog = get_object_or_404(Blog,pk=blog_id)
     if detail_blog== Http404:
         print("error msg")
         return render(request, 'blog/error.html')
     print("here")
-    '''
+
     try:
         detail_blog = Blog.objects.get(pk=blog_id)
-        return render(request, 'blog/detail.html', {"blog": detail_blog})
+        return render(request, 'detail.html', {"blog": detail_blog})
     except Blog.DoesNotExist:
-        return render(request, 'blog/error.html')
+        return render(request, 'error.html')

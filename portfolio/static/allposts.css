@@ -1,0 +1,13 @@
+.onepost{
+    background-color: #3e4555;
+    color:white;
+    background-image: url('gears_bg.png');
+    padding-bottom: 50px;
+
+}
+
+.blurb{
+    text-aligned: justified;
+    padding-left: 20px;
+}
+
