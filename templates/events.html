@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+<header>
+    <title>Events</title>
+</header>
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center pt-4">Our Event Calendar</h1>
+    <br/>
+                <!--    loading calendar mmmmm yum    -->
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%238E24AA&amp;ctz=America%2FEdmonton&amp;src=MjkzcDRtZnFhYXY4cW5lNWZpZXFhanZyaTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23E67C73&amp;color=%23D50000" style="border:solid 1px #777" width="800" height="600" frameborder="2" scrolling="no"></iframe>
+    <br/>
+</div>
+{% endblock %}
+</html>
+

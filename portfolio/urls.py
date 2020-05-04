@@ -25,4 +25,5 @@ urlpatterns = [
     path('', views.home, name= 'home'),
     path('team/', views.team, name= 'team'),
     path('blog/', include('blog.urls')), # groups all urls with blog/ to be sent to the blog app
+    path('events/', views.events, name = 'events'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
