@@ -9,5 +9,9 @@
 .blurb{
     text-aligned: justified;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
+.btn btn-primary{
+   float: right;
+}

@@ -20,11 +20,14 @@
             {% for post in posts.all %}
 
             <div class="onepost">
-                <h3 style="padding-left: 20px; padding-top: 5px;">{{post.title}}</h2>
+                <h3 style="padding-left: 20px; padding-top: 20px;">{{post.title}}</h3>
                 <p style="padding-left: 20px; padding-right: 40px">{{post.publication.date}} </p>
 
-                <p class="blurb">{{post.summary}}</p>
-                <a href="{% url 'detail' post.id %}"></a>
+                <p class="blurb">{{post.body|truncatewords:100}}</p>
+                    <a class="btn btn-primary" href="{% url 'detail' post.id %}" style="float: right; margin-right:20px;" role="button">Read More</a>
+
+
+                <!--<a href="{% url 'detail' post.id %}"></a>-->
             </div>
             <br/>
 

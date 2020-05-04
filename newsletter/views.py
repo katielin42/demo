@@ -7,7 +7,7 @@ from .models import Newsletter
 
 
 def allposts(request):
-    posts = Newsletter.objects.order_by('-publication')
+    posts = Newsletter.objects.order_by('-publication') #display by latest
     #posts = Newsletter.objects
     return render(request, 'allposts.html', {"posts": posts})
 
