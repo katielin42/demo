@@ -1,16 +1,15 @@
-<!doctype html>
-<html lang="en">
-<!-- justines chanage -->
-
-<header>
-    <title>EE Club</title>
-    <link href="static/home.css" rel="stylesheet" >
-    <link href = "static/basetemplate.css" rel="stylesheet">
-</header>
-
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+
+<html lang="en">
+
+<header>
+    <title>EE Club</title>
+    <link href="{% static 'home.css' %}" rel="stylesheet" >
+</header>
+
+
 <main role="main">
 
     <section class="jumbotron">

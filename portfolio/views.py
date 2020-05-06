@@ -10,3 +10,4 @@ def team(request):
 
 def events(request):
     return render(request, 'events.html')
+

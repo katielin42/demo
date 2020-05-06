@@ -1,6 +1,7 @@
-<!doctype html>
-<html lang="en">
 {% load static %}
+
+<html lang="en">
+
 <head>
     <title>EE Club</title>
     <link rel="shortcut icon" type="image/png" href="{% static 'EELogo_Temp.png' %}"/>
@@ -103,7 +104,14 @@
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
                     <a href="https://discord.com"><i
                         class="fa fa-discord fa-4x mr-1 " ></i></a>
-
+                    <!-- Search form -->
+<!-- Search form -->
+<form class="form-inline md-form mr-auto mb-4" style="margin-top:15px;"method="GET" action="{% url 'search' %}">
+  <input class="form-control mr-sm-2" name="query"  type="text" placeholder="Looking for something?" aria-label="Search">
+  <!--<button class="btn btn-primary " href="{% url 'team' %}" type="submit" >Search</button>-->
+       <!--         <a class="btn btn-primary" value='{{ request.GET.query }} href="{% url 'search' %}" style="float: right; margin-right:20px;" role="button">Search</a>-->
+                 <button class="btn btn-primary " type="submit" value='{{ request.GET.query }}'><i class="fa fa-search"></i></button>
+</form>
                 </p>
             </div>
             <div class="col-lg-3 col-xs-12 links">

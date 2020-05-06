@@ -7,12 +7,21 @@ from .models import Newsletter
 
 
 def allposts(request):
-    posts = Newsletter.objects.order_by('-publication') #display by latest
+    posts = Newsletter.objects.order_by('-publication') # display by latest
     #posts = Newsletter.objects
     return render(request, 'allposts.html', {"posts": posts})
 
 def render_to_response(param):
     pass
+
+def filteredposts(request):
+
+    searchQuery = request.GET.get('query','')
+    print("test query")
+    print(searchQuery)
+    #posts = Newsletter.objects.order_by('-publication') # display by latest
+    posts = Newsletter.objects.filter(body__contains=searchQuery).order_by('-publication') 
+    return render(request, 'allposts.html', {"posts": posts})
 
 def detail(request, post_id):
     detail_blog = get_object_or_404(Newsletter, pk=post_id)

@@ -19,6 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 import portfolio.views
 from portfolio import views
+import newsletter.views
 
 
 urlpatterns = [
@@ -28,4 +29,5 @@ urlpatterns = [
     # path('blog/', include('blog.urls')), # groups all urls with newsletter/ to be sent to the blog app
     path('newsletter/', include('newsletter.urls')),
     path('events/', views.events, name = 'events'),
+    path('search/', newsletter.views.filteredposts, name = 'search'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
