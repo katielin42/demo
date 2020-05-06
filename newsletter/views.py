@@ -9,6 +9,9 @@ from .models import Newsletter
 def allposts(request):
     posts = Newsletter.objects.order_by('-publication') # display by latest
     #posts = Newsletter.objects
+
+    pageTitle, tabTitle = "Newsletter"
+    return render(request, 'allposts.html', {"posts": posts, "pageTitle": pageTitle, "tabTitle": tabTitle})
     return render(request, 'allposts.html', {"posts": posts})
 
 def render_to_response(param):
@@ -19,9 +22,14 @@ def filteredposts(request):
     searchQuery = request.GET.get('query','')
     print("test query")
     print(searchQuery)
+    posts = Newsletter.objects.filter(body__contains=searchQuery).order_by('-publication')
+    pageTitle = "Searching for " + searchQuery
+    tabTitle = searchQuery + " results"
+    if(posts.count() == 0):
+        pageTitle ="No results found."
     #posts = Newsletter.objects.order_by('-publication') # display by latest
-    posts = Newsletter.objects.filter(body__contains=searchQuery).order_by('-publication') 
-    return render(request, 'allposts.html', {"posts": posts})
+
+    return render(request, 'allposts.html', {"posts": posts, "pageTitle": pageTitle, "tabTitle":tabTitle})
 
 def detail(request, post_id):
     detail_blog = get_object_or_404(Newsletter, pk=post_id)
