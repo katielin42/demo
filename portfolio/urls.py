@@ -27,4 +27,5 @@ urlpatterns = [
     path('team/', views.team, name= 'team'),
     # path('blog/', include('blog.urls')), # groups all urls with newsletter/ to be sent to the blog app
     path('newsletter/', include('newsletter.urls')),
+    path('events/', views.events, name = 'events'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
