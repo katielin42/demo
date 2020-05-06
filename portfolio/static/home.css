@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300,500);
 .jumbotron {
     background-image: url('circuit_bg.png');
     background-size: cover;
@@ -12,7 +13,7 @@ h1{
 .h2title{
     color:#152F4F;
     font-size:40pt;
-    font-family: Verdana;
+    font-family: Lato,sans-serif;
     padding-bottom:10px;
 }
 

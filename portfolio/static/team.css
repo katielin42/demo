@@ -1,7 +1,9 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
+@import url(//fonts.googleapis.com/css?family=Lato:300,500);
 .team4 {
-  font-family: "Montserrat", sans-serif;
-  /*color: #8d97ad;*/
+  /*font-family: "Montserrat", sans-serif;*/
+  font-family: "Lato", sans-serif;
+  color: #8d97ad;
   font-weight: 300;
 
 }

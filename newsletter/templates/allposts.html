@@ -15,13 +15,18 @@
         <br/>
         <br/>
         <h2>Latest Newsletters</h2>
+        <!--<h3>Subscribe to our monthly newsletter!</h3>-->
+        <label for="email" style="font-family: Verdana;">Subscribe to our monthly newsletter!</label>
+        <input type="email" id="email" name ="email" placeholder=" enter your email" style="width:220px; height:35px;margin-left:190px;">
+        <a class="btn btn-outline-primary" href="#" style="float: right; margin-right:20px;" role="button">Subscribe</a>
+
         <hr/>
         <div class="row ">
             {% for post in posts.all %}
 
             <div class="onepost">
                 <h3 style="padding-left: 20px; padding-top: 20px;">{{post.title}}</h3>
-                <p style="padding-left: 20px; padding-right: 40px">{{post.publication.date}} </p>
+                <p style="padding-left: 20px; padding-right: 40px; font-family: Lato;">{{post.publication.date}} </p>
 
                 <p class="blurb">{{post.body|truncatewords:100}}</p>
                     <a class="btn btn-primary" href="{% url 'detail' post.id %}" style="float: right; margin-right:20px;" role="button">Read More</a>
