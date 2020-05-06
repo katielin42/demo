@@ -1,0 +1,49 @@
+<!doctype html>
+
+<header>
+    <title>Newsletter</title>
+    <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-home.css" rel="stylesheet">
+</header>
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+
+    <br/>
+    <h3> Subscribe to our Newsletter</h3>
+    <h2>Latest Newsletters</h2>
+    <hr/>
+
+    <div class="row">
+         <!-- Blog Post -->
+        <div class="card mb-4">
+          <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title">Post Title</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+          <div class="card-footer text-muted">
+            Posted on January 1, 2017 by
+            <a href="#">Start Bootstrap</a>
+          </div>
+        </div>
+        <div class="blog-post">
+            <a href="{% url 'detail' blog.id %}"><h3 class="blog-post-title">{{blog.title}}</h3></a>
+            <p class="blog-post-meta">{{blog.publication}} </p>
+            <img class="card-img-top img-fluid" src="{{blog.image.url}}">
+
+            <p>{{blog.summary}}</p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</html>

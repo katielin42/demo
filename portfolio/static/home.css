@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300,500);
 .jumbotron {
     background-image: url('ee.jpg');
     background-size: cover;
@@ -12,7 +13,7 @@ h1{
 .h2title{
     color:#152F4F;
     font-size:40pt;
-    font-family: Verdana;
+    font-family: Lato,sans-serif;
     padding-bottom:10px;
 }
 
@@ -66,34 +67,4 @@ h1{
 .space{
     margin-bottom: 100px;
 
-}
-.footer{
-  background: #152F4F !important;
-  color:white;
-
-  .links{
-    ul {list-style-type: none;}
-    li a{
-      color: white;
-      transition: color .2s;
-      &:hover{
-        text-decoration:none;
-        color:#4180CB;
-        }
-    }
-  }
-  .about-company{
-    i{font-size: 25px;}
-
-    a{
-      color:white;
-      transition: color .2s;
-      &:hover{color:#4180CB}
-    }
-  }
-
-  .location{
-    i{font-size: 18px;}
-  }
-  .copyright p{border-top:1px solid rgba(255,255,255,.1);}
 }

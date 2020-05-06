@@ -3,7 +3,7 @@ from django.db import models
 
 # Register your models here.
 
-from .models import Blog
+from .models import Newsletter
 
 
-admin.site.register(Blog)
+admin.site.register(Newsletter)

@@ -1,12 +1,16 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
+@import url(//fonts.googleapis.com/css?family=Lato:300,500);
 .team4 {
-  font-family: "Montserrat", sans-serif;
-	color: #8d97ad;
+  /*font-family: "Montserrat", sans-serif;*/
+  font-family: "Lato", sans-serif;
+  color: #8d97ad;
   font-weight: 300;
+
 }
 
+
 .team4 h1, .team4 h2, .team4 h3, .team4 h4, .team4 h5, .team4 h6 {
-  color: #3e4555;
+    color: #3e4555;
 }
 
 .team4 .font-weight-medium {
@@ -38,6 +42,3 @@
 	color: #316ce8;
 }
 
-.footer{
-    background: #152F4F !important;
-}
