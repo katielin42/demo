@@ -976,6 +976,19 @@ input[type="submit"], button {
         top: 10px;
     }
 
+    .calendarTest{
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        position: relative;
+
+        }
+    .calendarTest iframe{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        }
+
     /* History */
 
     table#change-history tbody th, table#change-history tbody td {
