@@ -1,14 +1,23 @@
 @import url(//fonts.googleapis.com/css?family=Verdana:300,500);
 @import url(//fonts.googleapis.com/css?family=Lato:300,500);
+
 .onepost{
     background-color: #3e4555;
     color:white;
     background-image: url('gears_bg.png');
     padding-bottom: 45px;
     font-family: "Montserrat", sans-serif;
+    margin-bottom: 25px;
+    width: 100%;
+
 }
 h2,h3{
     font-family: Lato;
+}
+
+.text{
+    padding-left: 20px;
+    padding-top: 20px;
 }
 .blurb{
     text-aligned: justified;

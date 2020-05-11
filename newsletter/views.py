@@ -10,7 +10,8 @@ def allposts(request):
     posts = Newsletter.objects.order_by('-publication') # display by latest
     #posts = Newsletter.objects
 
-    pageTitle, tabTitle = "Newsletter"
+    pageTitle = "Newsletter"
+    tabTitle = "Newsletter"
     return render(request, 'allposts.html', {"posts": posts, "pageTitle": pageTitle, "tabTitle": tabTitle})
     return render(request, 'allposts.html', {"posts": posts})
 
@@ -18,7 +19,6 @@ def render_to_response(param):
     pass
 
 def filteredposts(request):
-
     searchQuery = request.GET.get('query','')
     print("test query")
     print(searchQuery)
@@ -26,7 +26,7 @@ def filteredposts(request):
     pageTitle = "Searching for " + searchQuery
     tabTitle = searchQuery + " results"
     if(posts.count() == 0):
-        pageTitle ="No results found."
+        pageTitle ="No results found for " + searchQuery
     #posts = Newsletter.objects.order_by('-publication') # display by latest
 
     return render(request, 'allposts.html', {"posts": posts, "pageTitle": pageTitle, "tabTitle":tabTitle})

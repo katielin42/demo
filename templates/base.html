@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>EE Club</title>
+    <!--<title>EE Club</title>-->
     <link rel="shortcut icon" type="image/png" href="{% static 'EELogo_Temp.png' %}"/>
 </head>
 <head>
@@ -74,7 +74,7 @@
             <div class="navbar-nav ml-auto" style="padding-right:200px" >
                 <a class="nav-item nav-link" style="color:white;" href="{% url 'home' %}">Home</a>
                 <!-- justines change -->
-                <a class="nav-item nav-link" style="color:white;" href="#">The Club</a>
+                <a class="nav-item nav-link" style="color:white;" href="{% url 'club' %}">The Club</a>
                 <a class="nav-item nav-link" style="color:white;" href="{% url 'events' %}">Events</a>
                 <a class="nav-item nav-link" style="color:white;" href="{% url 'allposts' %}">Newsletter</a>
 

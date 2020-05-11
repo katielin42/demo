@@ -8,6 +8,9 @@ def home(request):
 def team(request):
     return render(request,'team.html')
 
+def club(request):
+    return render(request,'club.html')
+
 def events(request):
     return render(request, 'events.html')
 

@@ -2,7 +2,8 @@
 .jumbotron {
     background-image: url('ee.jpg');
     background-size: cover;
-    height: 500px;
+    height: 60%; /*500px*/
+    width: 100%;
 }
 
 h1{

@@ -15,18 +15,21 @@
         <br/>
         <br/>
         <h2>{{pageTitle}}</h2>
-        <!--<h3>Subscribe to our monthly newsletter!</h3>-->
-        <label for="email" style="font-family: Verdana;">Subscribe to our monthly newsletter!</label>
-        <input type="email" id="email" name ="email" placeholder=" enter your email" style="width:220px; height:35px;margin-left:190px;">
+        <!--<h3>Subscribe to our monthly newsletter! mb-2 mr-sm-2 ml-10</h3>-->
+        <form class="form-inline">
+        <label for="email" style="font-family: Verdana; margin-right:195px;">Subscribe to our monthly newsletter!</label>
+        <input class="form-control  mb-10 mr-2" style="width:220px" type="email" id="email" name ="email"  placeholder=" enter your email">
+        <!--style="width:220px; height:35px;margin-left:190px;"-->
         <a class="btn btn-outline-primary" href="#" style="float: right; margin-right:20px;" role="button">Subscribe</a>
-
+        </form>
         <hr/>
         <div class="row ">
             {% for post in posts.all %}
 
             <div class="onepost">
-                <h3 style="padding-left: 20px; padding-top: 20px;">{{post.title}}</h3>
-                <p style="padding-left: 20px; padding-right: 40px; font-family: Lato;">{{post.publication.date}} </p>
+                <!--padding-left: 20px; padding-right: 40px; font-family: Lato;-->
+                <h3 class= "text" style="padding-left: 20px; padding-top: 20px;">{{post.title}}</h3>
+                <p class= "text" style="font-family: Lato;">{{post.publication.date}} </p>
 
                 <p class="blurb">{{post.body|truncatewords:100}}</p>
                     <a class="btn btn-primary" href="{% url 'detail' post.id %}" style="float: right; margin-right:20px;" role="button">Read More</a>
@@ -34,7 +37,7 @@
 
                 <!--<a href="{% url 'detail' post.id %}"></a>-->
             </div>
-            <br/>
+
 
             {% endfor %}
 
