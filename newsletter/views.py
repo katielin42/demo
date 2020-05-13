@@ -13,7 +13,6 @@ def allposts(request):
     pageTitle = "Newsletter"
     tabTitle = "Newsletter"
     return render(request, 'allposts.html', {"posts": posts, "pageTitle": pageTitle, "tabTitle": tabTitle})
-    return render(request, 'allposts.html', {"posts": posts})
 
 def render_to_response(param):
     pass
