@@ -25,7 +25,7 @@ import newsletter.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name= 'home'),
-    path('team/', views.team, name= 'team'),
+    path('team/', include('ourTeam.urls')),
     # path('blog/', include('blog.urls')), # groups all urls with newsletter/ to be sent to the blog app
     path('newsletter/', include('newsletter.urls')),
     path('events/', views.events, name = 'events'),
