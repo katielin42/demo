@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<html lang="en">
+
+<html>
+<header>
+    <title>Our Team</title>
+</header>
+<!-- Justines change -->
+  <link href="{% static 'team.css' %}" rel="stylesheet">
+<!-- Katies change -->
+<main>
+
+<div class="py-5 team4 ">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-7 text-center">
+        <h3 class="mb-3">Meet the Team</h3>
+        <h6 class="subtitle">Honestly just fuck me up </h6>
+      </div>
+    </div>
+    <div class="space"></div>
+    <div class="row">
+<!--rendering members of meet the team-->
+      {% for teams in team.all%}
+      <!-- column  -->
+      <div class="col-lg-3 mb-4">
+        <!-- Row -->
+        <div class="row">
+          <div class="col-md-12">
+                <img src= {{teams.profile_pic.url}} alt="wrapkit" class="img-fluid rounded-circle" />
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="pt-2">
+              <h5 class="mt-4 font-weight-medium mb-0">{{ teams.name }}</h5>
+              <h6 class="subtitle mb-3">{{ teams.title }}</h6>
+              <p> {{teams.email}}</p>
+            </div>
+          </div>
+        </div>
+        <!-- Row -->
+      </div>
+      {% endfor %}
+<!--      testing pfp scaling stuff: <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" alt="wrapkit" class="img-fluid rounded-circle"/> -->
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
+
+</html>
+
+
