@@ -1,21 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Team
 
 #testing the page
-team = [{
-    "name": 'name',
-    "title": 'title',
-    "description": 'description'
-},
-    {
-        "name": 'name2',
-        "title": 'title2',
-        "description": 'description2'
-    }
-]
+team = Team.objects.all()
 
 
 def home(request):
-    return render(request, 'team.html', {'team': team})
+    return render(request, 'team.html', {"team": team})
 
 # Create your views here.
