@@ -17,15 +17,13 @@
         <h2>{{pageTitle}}</h2>
         <!--<h3>Subscribe to our monthly newsletter! mb-2 mr-sm-2 ml-10</h3>-->
         <form class="form-inline">
-        <label for="email" style="font-family: Verdana; margin-right:195px;">Subscribe to our monthly newsletter!</label>
-        <input class="form-control  mb-10 mr-2" style="width:220px" type="email" id="email" name ="email"  placeholder=" enter your email">
+        <label style="font-family: Verdana; margin-right:195px;">Subscribe to our monthly newsletter!</label>
         <!--style="width:220px; height:35px;margin-left:190px;"-->
-        <a class="btn btn-outline-primary" href="https://mailchi.mp/a7f9e475f39a/ee-club-newsletter-signup" style="float: right; margin-right:20px;" role="button">Subscribe</a>
+        <a class="btn btn-outline-primary" href="https://mailchi.mp/a7f9e475f39a/ee-club-newsletter-signup" target="_blank" style="float: right; margin-right:20px;" role="button">Subscribe</a>
         </form>
         <hr/>
         <div class="row ">
             {% for post in posts.all %}
-
             <div class="onepost">
                 <!--padding-left: 20px; padding-right: 40px; font-family: Lato;-->
                 <h3 class= "text" style="padding-left: 20px; padding-top: 20px;">{{post.title}}</h3>
