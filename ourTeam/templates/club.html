@@ -14,15 +14,19 @@
 <br>
 <script>
 function more(id){
+console.log('id:')
+console.log(id)
+
+
     document.getElementById(id).style.display = "block";
     console.log('open')
 }
 function less(id){
+  console.log('id:')
+console.log(id)
     document.getElementById(id).style.display = "none";
     console.log('close')
 }
-
-
 
 
 </script>
@@ -30,28 +34,33 @@ function less(id){
 <div class=" container">
 
     <h4 style="padding-left:7%; padding-bottom: 10px;">Junior Exec Positions</h4>
+
+
     <br>
     <div class="row">
         {% for teams in team.all %}
+
         <div class="col-md-4 mb-4 pb-4">
             <div class="card" style="width: 18rem">
 
                 <h5 class="card-title" style="padding-top: 10px;padding-left: 10px; padding-right: 20px;">
-                    <a href="#" style=" color: ##8d97ad; text-decoration: none;"
-                       onclick="return more('eventsrep');">{{teams.position}}<i
+                    <a href="#" class ="openlink" id="link1" style=" color: ##8d97ad; text-decoration: none;"
+                     onclick= "return more('{{teams.id_name}}');">{{teams.position}}<i
                             class="fa fa-calendar fa-1x mr-1" style="padding-left: 20px;"></i></a></h5>
             </div>
-            <div class="infobox" id=eventsrep>
+
+            <div class="infobox" id="{{teams.id_name}}">
+            <!--<div class="infobox" id="Events Representative">-->
                 <p class="card-text">
                 <ul>
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
-                    <li>Milk</li>
-                    <li></li>
+                    <li>{{teams.description_1}}</li>
+                    <li>{{teams.description_2}}</li>
+                    <li>{{teams.description_3}}</li>
+                    <li>{{teams.description_4}}</li>
+                    <li>{{teams.description_5}}</li>
                 </ul>
                 </p>
-                <a href="#" style="color: #fb3f00; text-decoration: none;" onclick="return less('eventsrep');">Show
+                <a href="#" style="color: #fb3f00; text-decoration: none;" onclick="return less('{{teams.id_name}}');">Show
                     Less</a>
             </div>
             <br>
