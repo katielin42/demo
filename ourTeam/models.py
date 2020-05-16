@@ -4,9 +4,10 @@ from django.db import models
 class Team(models.Model):
     profile_pic = models.ImageField(upload_to='picx', default = "EELogo_Temp.png")
     name = models.CharField(max_length=240)
-    title = models.TextField()
-    email = models.TextField()
+    position = models.CharField(max_length=21, default = "Something Rep.") # crop to fit the club.html cards
+    description_1 = models.TextField(default="Shall be responsible for ...")
+    email = models.EmailField()
 
 
     def __str__(self): # displays actual title on admin page
-        return self.title
+        return self.position

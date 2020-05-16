@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<html lang="en">
+<header>
+    <title>The Club</title>
+    <link href="{% static 'club.css' %}" rel="stylesheet">
+    <script src="{% static 'club.js' %}"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+
+</header>
+<br>
+<script>
+function more(id){
+    document.getElementById(id).style.display = "block";
+    console.log('open')
+}
+function less(id){
+    document.getElementById(id).style.display = "none";
+    console.log('close')
+}
+
+
+
+
+</script>
+
+<div class=" container">
+
+    <h4 style="padding-left:7%; padding-bottom: 10px;">Junior Exec Positions</h4>
+    <br>
+    <div class="row">
+        {% for teams in team.all %}
+        <div class="col-md-4 mb-4 pb-4">
+            <div class="card" style="width: 18rem">
+
+                <h5 class="card-title" style="padding-top: 10px;padding-left: 10px; padding-right: 20px;">
+                    <a href="#" style=" color: ##8d97ad; text-decoration: none;"
+                       onclick="return more('eventsrep');">{{teams.position}}<i
+                            class="fa fa-calendar fa-1x mr-1" style="padding-left: 20px;"></i></a></h5>
+            </div>
+            <div class="infobox" id=eventsrep>
+                <p class="card-text">
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                    <li>Milk</li>
+                    <li></li>
+                </ul>
+                </p>
+                <a href="#" style="color: #fb3f00; text-decoration: none;" onclick="return less('eventsrep');">Show
+                    Less</a>
+            </div>
+            <br>
+
+        </div>
+        {% endfor %}
+    </div>
+
+
+    <div class="space"></div>
+
+
+</div>
+{% endblock %}
+
+
+</html>
+

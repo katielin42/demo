@@ -1,6 +1,46 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300,500);
+
 .section {
     margin-top: 20 px;
     font-family: Lato;
 
 }
+div .infobox{
+width: 320px;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  background-color:white;
+  margin: 0;
+  top: 50%;
+  left: 60%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+
+}
+.infobox{
+position: absolute;
+    display: none;
+    z-index: 2;
+
+}
+h2 {
+
+}
+ .card{
+   position: absolute;
+   z-index: 1;
+   left:25%;
+   height:50px
+
+ }
+
+ .space{
+ height: 300px;
+
+ }
+
+ .between{
+  height: 60px;
+ }
