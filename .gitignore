@@ -377,7 +377,6 @@ ehthumbs_vista.db
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
-sitedb
 
 # Windows Installer files
 *.cab
