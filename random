@@ -1,25 +1,3 @@
-@import url(//fonts.googleapis.com/css?family=Lato:300,500);
-.jumbotron {
-    background-image: url('ee.jpg');
-    background-size: cover;
-    height: 60%; /*500px*/
-    width: 100%;
-}
-
-h1{
-    color: white !important;
-    padding-left: 500 px !important;
-     margin-bottom: 50px;
-}
-.h2title{
-    color:#152F4F;
-    font-size:40pt;
-    font-family: Lato,sans-serif;
-    padding-bottom:10px;
-}
-
-
-
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
 .flip-card {
@@ -71,6 +49,3 @@ h1{
     margin-bottom: 100px;
 
 }
-
-/* TESTING THE NEW FLIPCARDS */
-
