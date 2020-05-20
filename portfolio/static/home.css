@@ -2,21 +2,21 @@
 .jumbotron {
     background-image: url('ee.jpg');
     background-size: cover;
-    height: 60%; /*500px*/
+    height:  65%; /*500px*/
     width: 100%;
 }
+/**
+.slidepic {
 
-h1{
-    color: white !important;
-    padding-left: 500 px !important;
-     margin-bottom: 50px;
-}
-.h2title{
-    color:#152F4F;
-    font-size:40pt;
-    font-family: Lato,sans-serif;
-    padding-bottom:10px;
-}
+role="listbox" style=" width:100%; height: 1000px !important;
+    height:  500px; /*500px
+    width: 500px;
+    float:center;
+} */
+
+
+
+
 
 
 
