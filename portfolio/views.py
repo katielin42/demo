@@ -14,3 +14,7 @@ def club(request):
 def events(request):
     return render(request, 'events.html')
 
+def test(request):
+    return render(request, 'test.html')
+
+

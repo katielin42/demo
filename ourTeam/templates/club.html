@@ -31,12 +31,15 @@ console.log(id)
 
 </script>
 
+<div class = "container">
+    <h4 class = 'title' style="padding-left:7%; padding-bottom: 10px; ">Frequently Asked Questions</h4>
+
+</div>
+
 <div class=" container">
 
-    <h4 style="padding-left:7%; padding-bottom: 10px;">Junior Exec Positions</h4>
+    <h4 class="title" style="padding-left:7%; padding-bottom: 10px;">Executive Positions</h4>
 
-
-    <br>
     <div class="row">
         {% for teams in team.all %}
 
@@ -44,12 +47,12 @@ console.log(id)
             <div class="card" style="width: 18rem">
 
                 <h5 class="card-title" style="padding-top: 10px;padding-left: 10px; padding-right: 20px;">
-                    <a href="#" class ="openlink" id="link1" style=" color: ##8d97ad; text-decoration: none;"
-                     onclick= "return more('{{teams.id_name}}');">{{teams.position}}<i
-                            class="fa fa-calendar fa-1x mr-1" style="padding-left: 20px;"></i></a></h5>
+                    <a href="#" class ="openlink" id="link1" style=" color: #2063f7; text-decoration: none;"
+                     onclick= "return more('{{teams.position}}');">{{teams.position}}<i
+                            class="{{teams.icon}} fa-1x mr-1" style="padding-left: 20px;"></i></a></h5>
             </div>
 
-            <div class="infobox" id="{{teams.id_name}}">
+            <div class="infobox" id="{{teams.position}}">
             <!--<div class="infobox" id="Events Representative">-->
                 <p class="card-text">
                 <ul>
@@ -60,7 +63,7 @@ console.log(id)
                     <li>{{teams.description_5}}</li>
                 </ul>
                 </p>
-                <a href="#" style="color: #fb3f00; text-decoration: none;" onclick="return less('{{teams.id_name}}');">Show
+                <a href="#" style="padding-left: 15px; color: #8d97ad; text-decoration: none;" onclick="return less('{{teams.position}}');">Show
                     Less</a>
             </div>
             <br>

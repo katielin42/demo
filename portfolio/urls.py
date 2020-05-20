@@ -32,4 +32,5 @@ urlpatterns = [
     path('events/', views.events, name = 'events'),
     path('club/', ourTeam.views.club, name='club'),
     path('search/', newsletter.views.filteredposts, name = 'search'),
+    path('test/', views.test, name = 'test')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

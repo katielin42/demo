@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300,500);
-
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
 .section {
     margin-top: 20 px;
     font-family: Lato;
@@ -25,7 +25,11 @@ position: absolute;
     z-index: 2;
 
 }
-h2 {
+.title {
+    font-family: Lato;
+/*color: #8d97ad;*/
+color:red
+
 
 }
  .card{
@@ -44,3 +48,4 @@ h2 {
  .between{
   height: 60px;
  }
+
