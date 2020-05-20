@@ -7,7 +7,7 @@
 <header>
     <title>EE Club</title>
     <link href="{% static 'home.css' %}" rel="stylesheet">
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/"
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
     <link href="carousel.css" rel="stylesheet">
 
 
@@ -75,14 +75,16 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </section>
-    <div class="album py-5 bg-light">
 
-        <div class="space"></div>
-        <div class="container">
-            <h2 class="h2title">Our Events</h2>
+</section>
 
-            <style>
+<div class="album py-5 bg-light">
+
+    <div class="space"></div>
+    <div class="container">
+        <h2 class="h2title">Our Events</h2>
+
+        <style>
 .flip {
   position: relative;
 }
@@ -148,50 +150,53 @@
 }
 
 
-            </style>
+
+        </style>
 
 
-            <div class="flip">
-                <div class="front" style="background-image: url({% static 'ece.jpg' %})">
-                    <h1 class="text-shadow">FIRST YEAR NIGHT</h1>
-                </div>
-                <div class="back">
-                    <h2>First Year Night</h2>
-                    <p>We come together with other ECE disciplines to show first year students the best things about
-                        being in ECE!</p>
-                </div>
+        <div class="flip">
+            <div class="front" style="background-image: url({% static 'ece.jpg' %})">
+                <h1 class="text-shadow">FIRST YEAR NIGHT</h1>
             </div>
-            <div class="flip">
-                <div class="front" style="background-image: url({% static 'geer-week.jpg' %})">
-                    <h1 class="text-shadow">GEER WEEK FUN</h1>
-                </div>
-                <div class="back">
-                    <h2>GEER Week</h2>
-                    <p>Friendly competition between all engineering disciplines, with fun events and parties all week
-                        long! </p>
-                </div>
+            <div class="back">
+                <h2>First Year Night</h2>
+                <p>We come together with other ECE disciplines to show first year students the best things about
+                    being in ECE!</p>
             </div>
-            <div class="flip">
-                <div class="front" style="background-image: url({% static 'grad_3.jpg' %})">
-                    <h1 class="text-shadow">GRAD BANQUET</h1>
-                </div>
-                <div class="back">
-                    <h2>ECE Grad Banquet </h2>
-                    <p>To send off our wonderful graduates of the year, we host a formal ECE grad banquet just for
-                        them! </p>
-                </div>
-            </div>
-
-            <br>
-            <br>
-
         </div>
+        <div class="flip">
+            <div class="front" style="background-image: url({% static 'geer-week.jpg' %})">
+                <h1 class="text-shadow">GEER WEEK FUN</h1>
+            </div>
+            <div class="back">
+                <h2>GEER Week</h2>
+                <p>Friendly competition between all engineering disciplines, with fun events and parties all week
+                    long! </p>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="front" style="background-image: url({% static 'grad_3.jpg' %})">
+                <h1 class="text-shadow">GRAD BANQUET</h1>
+            </div>
+            <div class="back">
+                <h2>ECE Grad Banquet </h2>
+                <p>To send off our wonderful graduates of the year, we host a formal ECE grad banquet just for
+                    them! </p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
     </div>
-    <br/>
-    <br/>
-    <br/>
+</div>
+<br/>
+<br/>
+<br/>
 </main>
 
 {% endblock %}
 
 </html>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
