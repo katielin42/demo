@@ -1,5 +1,6 @@
 {% load static %}
 
+
 <html lang="en">
 
 <head>
@@ -23,13 +24,13 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
-    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<!--    <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">-->
+<!--    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">-->
+<!--    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">-->
+<!--    <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">-->
+<!--    <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">-->
+<!--    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">-->
+<!--    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">-->
     <meta name="theme-color" content="#563d7c">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="album.css" rel="stylesheet">
@@ -74,12 +75,11 @@
             <div class="navbar-nav ml-auto" style="padding-right:200px" >
                 <a class="nav-item nav-link" style="color:white;" href="{% url 'home' %}">Home</a>
                 <!-- justines change -->
-                <a class="nav-item nav-link" style="color:white;" href="{% url 'club' %}">The Club</a>
-                <a class="nav-item nav-link" style="color:white;" href="{% url 'events' %}">Events</a>
+                <a class="nav-item nav-link" style="color:white;" href="{% url 'club' %}">The club</a>
                 <a class="nav-item nav-link" style="color:white;" href="{% url 'allposts' %}">Newsletter</a>
-
-                <a class="nav-item nav-link" target="_blank" style="color:white;" href="https://eeclubmerch.square.site/s/shop">Merch</a>
+                <a class="nav-item nav-link" style="color:white;" href="{% url 'events' %}">Events</a>
                 <a class="nav-item nav-link" style="color:white;" href="{% url 'team' %}">Our Team</a>
+                <a class="nav-item nav-link" target="_blank" style="color:white;" href="https://eeclubmerch.square.site/s/shop">Merch</a>
 <!--                <a class="nav-item nav-link" style="color:white;" href="/club/#jello">Test</a>-->
             </div>
             </div>
@@ -93,69 +93,257 @@
 
 </main>
 
-<div class="mt-5 pt-5 pb-5 footer" >
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 col-xs-12 about-company">
-                <h2 style="color:white;">Connect with us!</h2>
-                <p><a href="https://www.facebook.com/UAlbertaElectricalEngineeringClub/"><i
-                        class="fa fa-facebook-square fa-4x mr-1" style="padding-right: 10px;"></i></a>
-                    <a href="https://instagram.com"><i
-                        class="fa fa-instagram fa-4x mr-1" style="padding-right: 10px;"></i></a>
-                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-                    <a href="https://discord.com"><i
-                        class="fa fa-discord fa-4x mr-1 " ></i></a>
-                    <!-- Search form -->
-<!-- Search form -->
-<form class="form-inline md-form mr-auto mb-4" style="margin-top:15px;"method="GET" action="{% url 'search' %}">
-  <input class="form-control mr-sm-2" name="query"  type="text"  placeholder="Looking for something?" aria-label="Search">
-  <!--<button class="btn btn-primary " href="{% url 'team' %}" type="submit" >Search</button>-->
-       <!--         <a class="btn btn-primary" value='{{ request.GET.query }} href="{% url 'search' %}" style="float: right; margin-right:20px;" role="button">Search</a>-->
-                 <button class="btn btn-primary " type="submit" value='{{ request.GET.query }}'><i class="fa fa-search"></i></button>
-</form>
-                </p>
-            </div>
-            <div class="col-lg-3 col-xs-12 links">
-                <h4 class="mt-lg-0 mt-sm-3"  style="color:white;">Links</h4>
-                <ul class="m-0 p-0" style="color:white;">
-                    <li> <a href="#">Lorem ipsum</a></li>
-                    <li> <a href="#">Nam mauris velit</a></li>
-                    <li> <a href="#">Etiam vitae mauris</a></li>
-                    <li> <a href="#">Fusce scelerisque</a></li>
-                    <li> <a href="#">Sed faucibus</a></li>
-                    <li> <a href="#">Mauris efficitur nulla</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-xs-12 location">
-                <h4 class="mt-lg-0 mt-sm-4" style="color:white;">Location</h4>
-                <p style="color:white;">Engineering Teaching and Learning Center <br/>
-                    ETLC 2-040 B (right end of clubs hallway)  <br/>
-                    116 St NW
-                    Edmonton, AB, Canada
-                    T6G 2V4</p>
-                <p class="mb-0" style="color:white;"><i class="fa fa-phone mr-3" style="color:white;"></i>(541) 754-3010</p>
-                <p><i class="fa fa-envelope-o mr-3" style="color:white;"></i><a href="mailto:someone@yoursite.com">eeclub@ualberta.ca</a>  </p>
 
-            </div>
+<!--<div class="mt-5 pt-5 pb-5 footer" >-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-5 col-xs-12 about-company">-->
+<!--                <h2 style="color:white;">Connect with us!</h2>-->
+<!--                <p><a href="https://www.facebook.com/UAlbertaElectricalEngineeringClub/"><i-->
+<!--                        class="fa fa-facebook-square fa-4x mr-1" style="padding-right: 10px;"></i></a>-->
+<!--                    <a href="https://instagram.com"><i-->
+<!--                        class="fa fa-instagram fa-4x mr-1" style="padding-right: 10px;"></i></a>-->
+<!--                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">-->
+<!--                    <a href="https://discord.com"><i-->
+<!--                        class="fa fa-discord fa-4x mr-1 " ></i></a>-->
+<!--                    &lt;!&ndash; Search form &ndash;&gt;-->
+
+<!--                </p>-->
+<!--            </div>-->
+<!--            <div class="col-lg-3 col-xs-12 links">-->
+<!--                <h4 class="mt-lg-0 mt-sm-3"  style="color:white;">Links</h4>-->
+<!--                <ul class="m-0 p-0" style="color:white;">-->
+<!--                    <li> <a href="#">Lorem ipsum</a></li>-->
+<!--                    <li> <a href="#">Nam mauris velit</a></li>-->
+<!--                    <li> <a href="#">Etiam vitae mauris</a></li>-->
+<!--                    <li> <a href="#">Fusce scelerisque</a></li>-->
+<!--                    <li> <a href="#">Sed faucibus</a></li>-->
+<!--                    <li> <a href="#">Mauris efficitur nulla</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="col-lg-4 col-xs-12 location">-->
+<!--                <h4 class="mt-lg-0 mt-sm-4" style="color:white;">Location</h4>-->
+<!--                <p style="color:white;">Engineering Teaching and Learning Center <br/>-->
+<!--                    ETLC 2-040 B (right end of clubs hallway)  <br/>-->
+<!--                    116 St NW-->
+<!--                    Edmonton, AB, Canada-->
+<!--                    T6G 2V4</p>-->
+<!--                <p class="mb-0" style="color:white;"><i class="fa fa-phone mr-3" style="color:white;"></i>(541) 754-3010</p>-->
+<!--                <p><i class="fa fa-envelope-o mr-3" style="color:white;"></i><a href="mailto:someone@yoursite.com">eeclub@ualberta.ca</a>  </p>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row mt-5">-->
+<!--            <div class="col copyright">-->
+<!--                <p class=""><small class="text-white-50">© Electrical Engineering Club {% now "Y" %}. All Rights-->
+<!--                    Reserved.</small></p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--</html>-->
+<!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"-->
+<!--        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"-->
+<!--        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"-->
+<!--        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"-->
+<!--        crossorigin="anonymous"></script>-->
+
+<style>
+    .site-footer
+{
+  background-color:#152F4F;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#ffffff;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#ffffff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:##ffffff;
+}
+.site-footer a:hover
+{
+  color:#fff;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#ffffff
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#ffffff;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+sup {
+    vertical-align: baseline;
+    font-size: smaller;
+}
+ita {
+  font-style: italic;
+}
+b{
+    font-weight: bold;
+}
+
+.testing{
+
+  text-decoration:none;
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+  }
+
+.testing li{
+
+  list-style:none;
+  display: inline-block;
+  }
+.testing a{
+  color: #ffffff;
+
+}
+</style>
+
+
+  <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <h6><b>Inspiration</b></h6>
+              <ul class = "footer-links">
+                  <li><ita>“e <sup>iπ</sup> +1 = 0”</ita> ― Leonard Euler</li>
+                  <li><ita>“Nature laughs at the difficulties of integration.”</ita> ― Pierre-Simon Laplace </li>
+                  <li><ita>"Electrical Engineers: No resistance can drop our potential."</ita> ― Anonymous</li>
+                  <li><ita>“Those who can imagine anything, can create the impossible.”</ita> ― Alan Turing</li>
+                  <li><ita>" 'Believe in your strength and your youth.' ― Andre Gide"</ita> ― Quotes on the future, Mani Vaidyanathan </li>
+              <li><ita>"If you want to find the secrets of the universe, think in terms of energy, frequency and vibration."</ita> ― Tesla</li>
+
+              </ul>
+          </div>
+
+          <div class="col-xs-9 col-md-4">
+              <h6><b>Contact Us</b></h6>
+            <ul class="footer-links">
+              <li>University of Alberta</li>
+              <li>Engineering Teaching and Learning Complex</li>
+              <li>116 St NW, Edmonton, AB, Canada, T6G 2V4</li>
+              <li>ETLC E2-040 B, end of club's hallway to the right</li>
+            </ul>
+                                               <!-- Search form -->
+                <form class="form-inline md-form mr-auto mb-4" style="margin-top:15px;"method="GET" action="{% url 'search' %}">
+                  <input class="form-control mr-sm-2" name="query"  type="text"  placeholder="Looking for something?" aria-label="Search">
+                  <!--<button class="btn btn-primary " href="{% url 'team' %}" type="submit" >Search</button>-->
+                       <!--         <a class="btn btn-primary" value='{{ request.GET.query }} href="{% url 'search' %}" style="float: right; margin-right:20px;" role="button">Search</a>-->
+                                 <button class="btn btn-primary " type="submit" value='{{ request.GET.query }}'><i class="fa fa-search"></i></button>
+                </form>
+          </div>
         </div>
-        <div class="row mt-5">
-            <div class="col copyright">
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+              <p></p>
                 <p class=""><small class="text-white-50">© Electrical Engineering Club {% now "Y" %}. All Rights
                     Reserved.</small></p>
-            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="testing">
+              <li ><a href="https://www.facebook.com/UAlbertaElectricalEngineeringClub/"><i class="fa fa-facebook-square fa-3x mr-1"  style="padding-right: 10px;"></i></a></li>
+              <li><a href="https://instagram.com"><i class="fa fa-instagram fa-3x mr-1" style="padding-right: 10px;"></i></a></li>
+              <li><a href="mailto:eeclub@ualberta.ca"> <i class="fa fa-envelope-square fa-3x mr-1" style="padding-right: 10px;"></i></a></li>
+              <li><a href="https://mailchi.mp/a7f9e475f39a/ee-club-newsletter-signup"> <i class="fa fa-server fa-3x mr-1" style="padding-right: 10px;"></i></a></li>
+            </ul>
+          </div>
         </div>
-    </div>
-</div>
-
-</html>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+      </div>
+</footer>
 
 
+
+<!--                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">-->
