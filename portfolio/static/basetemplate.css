@@ -328,3 +328,14 @@ b{
 
 }
 </style>
+
+h1 {
+ font-family: 'Molengo', Georgia, Times, serif;
+ font-size: 56px;
+ line-height: 80px;
+}
+h5 {
+ font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+ font-size:20px;
+ line-height: 25px;
+}
