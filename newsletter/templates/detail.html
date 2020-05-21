@@ -1,13 +1,22 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 {% load static %}
 {% block content %}
+
 <html lang="en">
+
+<style>
+body{
+padding-top: 60px; }
+</style>
+
+<body>
 <header>
     <meta charset="UTF-8">
     <link href="{% static 'allposts.css' %}" rel="stylesheet">
 
     <title>{{post.publication|date:'F'}} Newsletter</title>
 </header>
+</body>
 <main role="main">
     <div class="container"> <!-- spacing -->
         <h2 class="text-center pt-4">{{post.title}}</h2>

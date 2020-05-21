@@ -1,16 +1,24 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 {% load static %}
 {% block content %}
 
 <html lang="en">
-<header>
-    <title>The Club</title>
-    <link href="{% static 'club.css' %}" rel="stylesheet">
-    <script src="{% static 'club.js' %}"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
 
-</header>
+<style>
+body{
+padding-top: 60px; }
+</style>
+
+<body>
+    <header>
+        <title>The Club</title>
+        <link href="{% static 'club.css' %}" rel="stylesheet">
+        <script src="{% static 'club.js' %}"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+
+    </header>
+</body>
 <br>
 <script>
 function more(id){

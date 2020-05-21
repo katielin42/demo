@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 {% load static %}
 {% block content %}
 
@@ -32,12 +32,15 @@
         height: 100%;
 
     }
-
+body{
+padding-top: 60px; }
 </style>
 
 
 <div class="container">
-    <h2 class="text-center pt-4" style="font-family='Lato'">Our Events Calendar</h2>
+    <body>
+
+    <h2 class="text-center pt-4" style="font-family='Lato'">Our Events Calendar</h2></body>
     <br/>
         <div id = "centering">
             <div class = "calendarTest">
@@ -48,6 +51,7 @@
         </div>
     <br/>
 </div>
+
 {% endblock %}
 </html>
 
