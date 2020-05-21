@@ -364,17 +364,16 @@ b{
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"></script>
 <script>
-    $(window).scroll(function(){
-        $('nav').toggleClass('scrolled', $(this).scrollTop()>600)
-    })
-</script>
-
-<script>
     $(document).ready(function(){
         $('#jq_butt').click(function(){
             $('nav').toggleClass('scrolled')
          })
     })
+    $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop()>600)
+    })
 </script>
+
+
 
 <!--                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">-->
