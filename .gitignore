@@ -388,5 +388,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+sitedb
+
 # End of https://www.gitignore.io/api/linux,macos,windows
 
