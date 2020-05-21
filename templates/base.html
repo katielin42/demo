@@ -31,7 +31,7 @@
 <!--    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">-->
     <meta name="theme-color" content="#563d7c">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="album.css" rel="stylesheet">
+<!--    <link href="album.css" rel="stylesheet">-->
 
 
 
@@ -78,7 +78,7 @@
         <a class="navbar-brand" href="{% url 'home' %}" style="padding-left:30px ">
         <img src="{% static 'EEClub_Logo_Thicc.png' %}" height="45" class="d-inline-block align-top" alt="Electrical Engineering Club">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        <button id = "jq_butt" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -365,10 +365,16 @@ b{
       crossorigin="anonymous"></script>
 <script>
     $(window).scroll(function(){
-    $('nav').toggleClass('scrolled', $(this).scrollTop()>600    )
+        $('nav').toggleClass('scrolled', $(this).scrollTop()>600)
     })
 </script>
 
-
+<script>
+    $(document).ready(function(){
+        $('#jq_butt').click(function(){
+            $('nav').toggleClass('scrolled')
+         })
+    })
+</script>
 
 <!--                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">-->
