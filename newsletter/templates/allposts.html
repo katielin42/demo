@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 {% load static %}
 {% block content %}
 <html lang="en">
@@ -8,29 +8,34 @@
 
     <title>{{tabTitle}}</title>
 </header>
-
+<style>
+body{
+padding-top: 60px; }
+</style>
 
 <main>
+    <body>
     <div class="container" style="width:55%"> <!-- spacing -->
         <br/>
         <br/>
-        <h2>{{pageTitle}}</h2>
+        <h3>{{pageTitle}}</h3>
         <!--<h3>Subscribe to our monthly newsletter! mb-2 mr-sm-2 ml-10</h3>-->
         <form class="form-inline">
-        <label style="font-family: Verdana; margin-right:195px;">Subscribe to our monthly newsletter!</label>
+        <label style="font-family: Verdana; margin-right:20px;">Subscribe to our monthly newsletter!</label>
         <!--style="width:220px; height:35px;margin-left:190px;"-->
         <a class="btn btn-outline-primary" href="https://mailchi.mp/a7f9e475f39a/ee-club-newsletter-signup" target="_blank" style="float: right; margin-right:20px;" role="button">Subscribe</a>
         </form>
         <hr/>
         <div class="row ">
             {% for post in posts.all %}
-            <div class="onepost">
+            <div class="onepost" style=" color:black;">
+
                 <!--padding-left: 20px; padding-right: 40px; font-family: Lato;-->
-                <h3 class= "text" style="padding-left: 20px; padding-top: 20px;">{{post.title}}</h3>
+                <h2 class= "text" style="padding-left: 20px; padding-top: 20px; font-family: 'Open Sans';">{{post.title}}</h2>
                 <p class= "text" style="font-family: Lato;">{{post.publication.date}} </p>
 
                 <p class="blurb">{{post.body|truncatewords:100}}</p>
-                    <a class="btn btn-primary" href="{% url 'detail' post.id %}" style="float: right; margin-right:20px;" role="button">Read More</a>
+                    <a class="btn btn-outline-secondary" href="{% url 'detail' post.id %}" style="float: right; margin-right:20px;" role="button">Read More</a>
 
 
                 <!--<a href="{% url 'detail' post.id %}"></a>-->
@@ -41,6 +46,7 @@
 
         </div>
     </div>
+    </body>
 </main>
 {% endblock %}
 </html>

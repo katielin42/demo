@@ -10,8 +10,8 @@ def allposts(request):
     posts = Newsletter.objects.order_by('-publication') # display by latest
     #posts = Newsletter.objects
 
-    pageTitle = "Newsletter"
-    tabTitle = "Newsletter"
+    pageTitle = "Newsletters"
+    tabTitle = "Newsletters"
     return render(request, 'allposts.html', {"posts": posts, "pageTitle": pageTitle, "tabTitle": tabTitle})
 
 def render_to_response(param):

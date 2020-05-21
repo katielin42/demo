@@ -15,6 +15,8 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
 
+
+
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
 
     <!-- Bootstrap core CSS -->
@@ -54,16 +56,9 @@
       position: fixed; /* Set the navbar to fixed position */
       top: 0; /* Position the navbar at the top of the page */
       width: 100%; /* Full width */
-      z-index: 100!important;
-      background: transparent;
-      transition:500ms ease-in;
+      z-index: 100;
+      background: rgba(15, 48, 95, 0.8); /*red, green, blue, opacity*/;
     }
-
-    .navbar.scrolled{
-        background: rgba(15, 48, 95, 0.8); /*red, green, blue, opacity*/
-    }
-
-
     </style>
     <!-- Custom styles for this template -->
     <link href="{% static 'basetemplate.css' %}" rel="stylesheet">
@@ -165,7 +160,7 @@
 
 <style>
     .site-footer
-{
+{/*435872*/
   background-color:#152F4F;
   padding:45px 0 20px;
   font-size:15px;
@@ -363,11 +358,11 @@ b{
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"></script>
-<script>
-    $(window).scroll(function(){
-    $('nav').toggleClass('scrolled', $(this).scrollTop()>600    )
-    })
-</script>
+<!--<script>-->
+<!--    $(window).scroll(function(){-->
+<!--    $('nav').toggleClass('scrolled', $(this).scrollTop()>670)-->
+<!--    })-->
+<!--</script>-->
 
 
 
