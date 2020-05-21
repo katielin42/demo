@@ -1,4 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300,500);
+@import url(https://fonts.googleapis.com/css?family=Molengo);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
 .jumbotron {
     background-image: url('ee.jpg');
     background-size: cover;
@@ -16,7 +18,16 @@ role="listbox" style=" width:100%; height: 1000px !important;
 
 
 
-
+h1 {
+ font-family: 'Molengo', Georgia, Times, serif;
+ font-size: 56px;
+ line-height: 80px;
+}
+h5 {
+ font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+ font-size:20px;
+ line-height: 25px;
+}
 
 
 
@@ -24,7 +35,7 @@ role="listbox" style=" width:100%; height: 1000px !important;
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
+  width: 400px;
   height: 200px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -114,7 +125,7 @@ role="listbox" style=" width:100%; height: 1000px !important;
   display: inline-block;
   margin-right: 2px;
   margin-bottom: 1em;
-  width: 300px;
+  width: 530px;
 }
 .flip > .front, .flip > .back {
   display: block;
@@ -122,7 +133,7 @@ role="listbox" style=" width:100%; height: 1000px !important;
   width: inherit;
   background-size: cover !important;
   background-position: center !important;
-  height: 220px;
+  height: 350px;
   padding: 1em 2em;
   background: #313131;
   border-radius: 10px;
