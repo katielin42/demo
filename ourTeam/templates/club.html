@@ -7,24 +7,24 @@
 <header>
     <title>The Club</title>
 
-    <link href="{% static 'club.css' %}" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+    <link href="{% static 'club.css' %}" rel="stylesheet">
 
 </header>
 
 <br>
 <script>
+console.log('fired')
 function more(id){
 console.log('id:')
 console.log(id)
-
-
-    document.getElementById(id).style.display = "block";
-    console.log('open')
+document.getElementById(id).style.display = "block";
+console.log('open')
 }
 function less(id){
   console.log('id:')
@@ -39,20 +39,22 @@ console.log(id)
 </script>
 <br>
 <div class="container">
-    <h1 style="text-align:center;font-size:26px;font-family: Molengo">Senior Executive Positions</h1>
+    <h1 style="padding-left:70px;text-align:center;font-size:26px;font-family: Molengo">Senior Executive Positions</h1>
+
     <div class="row">
         {% for teams in srexecs.all %}
         <!--return more('{{teams.position}}'-->
+
         <div class="col-md-4 mb-4 pb-4">
             <div class="card" style="width: 18rem">
 
                 <h5 class="card-title" style="padding-top: 10px;padding-left: 10px; padding-right: 20px;">
                     <a href="#" class="openlink" id="link1" style=" color: #2063f7; text-decoration: none;"
-                       onclick="return more('{{teams.position}}'>{{teams.position}}<i
+                       onclick="return more('{{teams.position}}');">{{teams.position}}<i
                             class=" {{teams.icon}} fa-1x mr-1" style="padding-left: 20px;"></i></a></h5>
             </div>
             <br>
-            <div class="infobox" id="{{teams.position}}">
+            <div class="infobox" id="{{teams.position}}" style="display:none">
                 <!--<div class="infobox" id="Events Representative">-->
                 <p class="card-text">
                 <ul>
@@ -63,12 +65,13 @@ console.log(id)
                     <li>{{teams.description_5}}</li>
                 </ul>
                 </p>
-                <a href="#" style="padding-left: 15px; color: #8d97ad; text-decoration: none;"
+                <a href="#" style="padding-left: 18px; color: #8d97ad; text-decoration: none;"
                    onclick="return less('{{teams.position}}');">Show
                     Less</a>
             </div>
             <br>
         </div>
+
         {% endfor %}
     </div>
 </div>
@@ -76,8 +79,46 @@ console.log(id)
 <br>
 
 <div class=" container">
+    <style>
+        div .infobox{
+   width: 450px;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  background-color:white;
+  margin: 0;
+  top: 50%;
+  left: 60%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.infobox{
+position: absolute;
+    display: none;
+    z-index: 2;
+     background-color:green;
 
-    <h1 class="mb-3" style="text-align:center;font-size:26px;font-family: Molengo"> Junior Executive Positions</h1>
+
+}
+
+ .card{
+   position: absolute;
+   z-index: 1;
+   left:25%;
+   height:50px
+   }
+   .space{
+ height: 300px;
+
+ }
+
+ .between{
+  height: 60px;
+ }
+
+ }
+    </style>
+    <h1 class="mb-3 ml-3" style="text-align:center; padding-left:70px;font-size:26px;font-family: Molengo"> Junior Executive Positions</h1>
 
     <div class="row">
         {% for jteams in jrexecs.all %}
@@ -91,7 +132,7 @@ console.log(id)
                             class="{{jteams.icon}} fa-1x mr-1" style="padding-left: 20px;"></i></a></h5>
             </div>
             <br>
-            <div class="infobox" id="{{jteams.position}}">
+            <div class="infobox" id="{{jteams.position}}" style="display:none">
                 <!--<div class="infobox" id="Events Representative">-->
                 <p class="card-text">
                 <ul>
@@ -102,7 +143,7 @@ console.log(id)
                     <li>{{jteams.description_5}}</li>
                 </ul>
                 </p>
-                <a href="#" style="padding-left: 15px; color: #8d97ad; text-decoration: none;"
+                <a href="#" style="padding-left: 18px; color: #8d97ad; text-decoration: none;"
                    onclick="return less('{{jteams.position}}');">Show
                     Less</a>
             </div>

@@ -158,19 +158,27 @@ body {
 
 }
 
-.tits{
+.titles{
     font-size: 60px;
     padding-top: 60px;
     padding-bottom: 60px;
-    font-family:
+    font-family: Molengo;
     color: #000000;
+
+}
+p{
+font-family:Droid Sans;
+}
+
+h2{
+font-family:Molengo;
 }
 
         </style>
 
         <!--Where the icons & functionalities of the club starts-->
         <div class="container" style="text-align: center;">
-            <h2 class="tits" style="color: #000000"> Our Club</h2>
+            <h2 class="titles" style="color: #000000"> Our Club</h2>
             <div class="row">
                 <div class="col-lg-4">
                     <i class="lnr lnr-dinner"></i>
@@ -185,8 +193,9 @@ body {
                         day. We also provide free hot water! (Club executives enjoy free tea & coffee). </p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <i class="lnr lnr-lighter"></i>
-                    <h2 class="header">Microwave</h2>
+                   <!-- <i class="lnr lnr-lighter"></i>-->
+                    <img src="{% static 'microwave.png' %}" style=" width: 100px; height:100px;margin-bottom:0px; float:top"/>
+                    <h2 class="header"style="margin-top:10px" >Microwave</h2>
                     <p>Tired of waiting in those long long ETLC microwave lines? Drop by our clubroom! We'll let you use
                         ours, since we likely don't have a line up!</p>
                 </div><!-- /.col-lg-4 -->
@@ -214,14 +223,14 @@ body {
 
             <!--Our events & the flipcards -->
             <div class="container" style="text-align: center; ">
-                <h2 class="tits" style="color: #000000">Our Events</h2>
+                <h2 class="titles sectitle" style="color: #000000">Our Events</h2>
                 <div style="background-color: white;">
                     <div class="row" style="justify-content: center;">
 
                         <div class="col-sm-auto " style="background-color: white;">
                             <div class="flip">
                                 <div class="front" style="background-image: url({% static 'ece-week.jpg' %})">
-                                    <h1 class="text-shadow">FIRST YEAR NIGHT!</h1>
+                                    <h1 class="text-shadow">FIRST YEAR NIGHT</h1>
                                 </div>
                                 <div class="back">
                                     <h2>First Year Night</h2>
