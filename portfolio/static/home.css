@@ -104,6 +104,9 @@ body {
 
 .flip {
   position: relative;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
 }
 .flip > .front, .flip > .back {
   display: block;
@@ -142,11 +145,11 @@ body {
 .flip {
   position: relative;
   display: inline-block;
-  margin-right: 2px;
   margin-bottom: 1em;
   width: 400px;
   height: 300px;
 }
+
 .flip > .front, .flip > .back {
   display: block;
   color: white;
@@ -159,7 +162,7 @@ body {
   border-radius: 10px;
 }
 .flip > .front p, .flip > .back p {
-  font-size: 0.9125rem;
+  font-size: 1.125rem;
   line-height: 160%;
   color: #ffffff;
 }
