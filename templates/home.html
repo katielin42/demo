@@ -8,6 +8,11 @@
     <title>EE Club</title>
     <link href="{% static 'home.css' %}" rel="stylesheet">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+    <link href="{% static 'allposts.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow" rel="stylesheet">
     <!--    <link href="carousel.css" rel="stylesheet">-->
 
 
@@ -16,7 +21,7 @@
 </header>
 
 <text>
-<!--    the big picture slideshow at the top-->
+    <!--    the big picture slideshow at the top-->
     <main role="main">
         <section>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -174,6 +179,8 @@ h2{
 font-family:Molengo;
 }
 
+
+
         </style>
 
         <!--Where the icons & functionalities of the club starts-->
@@ -193,9 +200,10 @@ font-family:Molengo;
                         day. We also provide free hot water! (Club executives enjoy free tea & coffee). </p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                   <!-- <i class="lnr lnr-lighter"></i>-->
-                    <img src="{% static 'microwave.png' %}" style=" width: 100px; height:100px;margin-bottom:0px; float:top"/>
-                    <h2 class="header"style="margin-top:10px" >Microwave</h2>
+                    <!-- <i class="lnr lnr-lighter"></i>-->
+                    <img src="{% static 'microwave.png' %}"
+                         style=" width: 100px; height:100px;margin-bottom:0px; float:top"/>
+                    <h2 class="header" style="margin-top:10px">Microwave</h2>
                     <p>Tired of waiting in those long long ETLC microwave lines? Drop by our clubroom! We'll let you use
                         ours, since we likely don't have a line up!</p>
                 </div><!-- /.col-lg-4 -->
@@ -230,7 +238,13 @@ font-family:Molengo;
                         <div class="col-sm-auto " style="background-color: white;">
                             <div class="flip">
                                 <div class="front" style="background-image: url({% static 'ece-week.jpg' %})">
-                                    <h1 class="text-shadow">FIRST YEAR NIGHT</h1>
+                                    <h1 class="text-shadow" style="
+                                    color: rgba(255, 255, 255, 0.7);
+                                    font-family: PT Sans Narrow;
+                                    font-weight:50;
+                                    font-size: 72px;
+                                    line-height:60px;
+                                    padding-top:60px;">FIRST YEAR NIGHT</h1>
                                 </div>
                                 <div class="back">
                                     <h2>First Year Night</h2>
@@ -244,7 +258,13 @@ font-family:Molengo;
                         <div class="col-sm-auto" style="background-color: white;">
                             <div class="flip">
                                 <div class="front" style="background-image: url({% static 'geer_week.jpg' %})">
-                                    <h1 class="text-shadow">GEER WEEK FUN</h1>
+                                    <h1 class="text-shadow" style="
+                                    color: rgba(255, 255, 255, 0.7);
+                                    font-family: PT Sans Narrow;
+                                    font-weight:50;
+                                    font-size: 72px;
+                                    line-height:60px;
+                                    padding-top:60px;">GEER WEEK FUN</h1>
                                 </div>
                                 <div class="back">
                                     <h2>GEER Week</h2>
@@ -258,7 +278,13 @@ font-family:Molengo;
                         <div class="col-sm-auto" style="background-color: white;">
                             <div class="flip">
                                 <div class="front" style="background-image: url({% static 'grad-3.jpg' %})">
-                                    <h1 class="text-shadow">ECE GRAD BANQUET</h1>
+                                    <h1 class="text-shadow" style="
+                                    color: rgba(255, 255, 255, 0.7);
+                                    font-family: PT Sans Narrow;
+                                    font-weight:50;
+                                    font-size: 72px;
+                                    line-height:60px;
+                                    padding-top:60px;">ECE GRAD BANQUET</h1>
                                 </div>
                                 <div class="back">
                                     <h2>Grad Banquet</h2>
@@ -271,10 +297,17 @@ font-family:Molengo;
                         <div class="col-sm-auto">
                             <div class="flip">
                                 <div class="front" style="background-image: url({% static 'geer_week.jpg' %})">
-                                    <h1 class="text-shadow">COOL MERCH SALES</h1>
+                                    <h1 class="text-shadow" style="
+                                    color: rgba(255, 255, 255, 0.7);
+                                    font-family: PT Sans Narrow;
+                                    font-weight:50;
+                                    font-size: 72px;
+                                    line-height:60px;
+                                    padding-top:60px;">COOL MERCH SALES</h1>
                                 </div>
                                 <div class="back">
-                                    <h2>Merch Sales</h2>
+                                    
+                                   <h2>Merch Sales</h2>
                                     <p>We come up with cool electrical engineering swag at least once a year. Checkout
                                         the Merch tab on our website to cop them, or sign up for our newsletter for any
                                         merch updates! </p>

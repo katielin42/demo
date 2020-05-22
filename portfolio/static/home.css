@@ -163,7 +163,7 @@ body {
 }
 .flip > .front p, .flip > .back p {
   font-size: 1.125rem;
-  line-height: 160%;
+ /** line-height: 160%; **/
   color: #ffffff;
 }
 .text-shadow {

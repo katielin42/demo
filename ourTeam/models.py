@@ -13,6 +13,7 @@ class Team(models.Model):
     description_5 = models.TextField(default="Shall be responsible for ...")
     email = models.EmailField()
     isSenior = models.BooleanField(default=False)
+    isDuplicateDescription=models.BooleanField(default=False)
 
 
 
