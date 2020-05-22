@@ -47,13 +47,13 @@ console.log(id)
     <h1 style="text-align:center;font-size:26px;font-family: Molengo">Senior Executive Positions</h1>
     <div class="row">
         {% for teams in srexecs.all %}
-
+<!--return more('{{teams.position}}'-->
         <div class="col-md-4 mb-4 pb-4">
             <div class="card" style="width: 18rem">
 
                 <h5 class="card-title" style="padding-top: 10px;padding-left: 10px; padding-right: 20px;">
                     <a href="#" class="openlink" id="link1" style=" color: #2063f7; text-decoration: none;"
-                       onclick="return more('{{teams.position}}');">{{teams.position}}<i
+                       onclick="return more('{{teams.position}}'>{{teams.position}}<i
                             class="{{teams.icon}} fa-1x mr-1" style="padding-left: 20px;"></i></a></h5>
             </div>
     <br>
