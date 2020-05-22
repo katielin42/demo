@@ -8,10 +8,16 @@
     <title>EE Club</title>
     <link href="{% static 'home.css' %}" rel="stylesheet">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
-<!--    <link href="carousel.css" rel="stylesheet">-->
-
+    <!--    <link href="carousel.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
 </header>
+<style>
+    .fade-test{
+        opacity: 1;
+    }
+</style>
+
 
 <text>
     <main role="main">
@@ -27,7 +33,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="first-slide"
-                                 src="{% static 'ee_plswork.jpg' %}"
+                                 src="{% static 'Hm.jpg' %}"
                                  alt="EE Club Outside"
                                  style=" height:89%; width:100%; max-width:100%; object-fit:cover; overflow: hidden;">
                             <div class="container">
@@ -39,18 +45,18 @@
                         </div>
                         <div class="carousel-item">
                             <img class="second-slide"
-                                 src="{% static 'geer-week3.jpg' %}"
+                                 src="{% static 'geer-week-car.jpg' %}"
                                  alt="EE Club members at Dewey's"
                                  style=" height:89%; width:100%; max-width:100%; object-fit:cover; overflow: hidden;">
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h1>About Us</h1>
-                                    <h5>The electrical engineering club strives to create a dynamic, open-minded
+                                    <h5>We strive to create a dynamic, open-minded
                                         environment
                                         that nurtures the academic and creative growth of the electrical engineering
                                         student
-                                        body as well as provide a welcoming place for students to meet and
-                                        socialize</h5>
+                                        body, and provide a welcoming place for students to meet and
+                                        socialize.</h5>
                                 </div>
                             </div>
                         </div>
@@ -62,11 +68,11 @@
                             <div class="container">
                                 <div class="carousel-caption text-right" style="top:40;bottom:auto; color: white;">
                                     <h1>About Us</h1>
-                                    <h5>Additionally, we are the liaison between students and
-                                        professors/faculty to collaborate on facilitating an education that harmonizes
+                                    <h5>We are the liaison between students and
+                                        the faculty to collaborate on facilitating an education that harmonizes
                                         with both
                                         student
-                                        interest and the many dynamic industries in Alberta.</h5>
+                                        interest and the industries of Alberta.</h5>
                                 </div>
                             </div>
                         </div>
@@ -84,12 +90,129 @@
 
         </section>
 
-        <div class="album py-5 bg-light">
+        <style>
+.lnr-cog {
+  color: #000000;
+  font-size: 100px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-            <div class="space"></div>
-            <div class="container">
+.lnr-users{
+  color: #000000;
+  font-size: 100px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.lnr-book{
+  color: #000000;
+  font-size: 100px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.lnr-dinner{
+  color: #000000;
+  font-size: 100px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.lnr-lighter{
+  color: #000000;
+  font-size: 100px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+
+}
+
+.lnr-coffee-cup{
+  color: #000000;
+  font-size: 100px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.header{
+  color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #555;
+
+}
+
+.tits{
+    font-size: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family:
+    color: #000000;
+}
+
+        </style>
+
+        <!--Where the icons & functionalities of the club starts-->
+        <div class="container" style = "text-align: center;">
+            <h2 class = "tits" style = "color: #000000" > Our Club</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="lnr lnr-dinner"></i>
+                    <h2 class = "header">Refreshments</h2>
+                    <p>Ranging from instant noodles, microwavable lunches to chips, candy bars & ice cream, to bottled refreshments. You name it, we probably have it! If not, leave a suggestion for us :) </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <i class="lnr lnr-coffee-cup"></i>
+                    <h2 class = "header" >Hot Drinks</h2>
+                    <p>We carry hot chocolate, tea packets & coffee for you to feel warmer after a brutal exam on a cold day. We also provide free hot water! (Club executives enjoy free tea & coffee). </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <i class="lnr lnr-lighter"></i>
+                    <h2 class = "header">Microwave</h2>
+                    <p>Tired of waiting in those long long ETLC microwave lines? Drop by our clubroom! We'll let you use ours, since we likely don't have a line up!</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <i class="lnr lnr-cog"></i>
+                    <h2 class = "header">Lab Kits</h2>
+                    <p>If you are enrolled in ECE 210, 302, or 303, you and your lab partner might need to purchase a lab kit (with electrical parts) for your lab sessions. We also sell wire strippers, breadboards, and wires.</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <i class="lnr lnr-book"></i>
+                    <h2 class = "header">Textbooks</h2>
+                    <p>We have some textbooks that may relate to what you are studying right now. If you believe you need some extra resources, come check out our bookshelf! We provide daily textbook rentals. </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <i class="lnr lnr-users"></i>
+                    <h2 class = "header">Come Visit</h2>
+                    <p>If you have any questions for us, or just wanna make some friends, come visit our clubroom. We'll try our best to help with what you need, or just have a nice chat!</p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+<!--            <div class="album py-5 bg-light" style="background-color: white;">-->
+
+
+
                 <!--
-                <h2 class="h2title">Our Events</h2>
+
 
 
                 <div class="flip">
@@ -126,10 +249,10 @@
 
                 <br>
                 <br>
-    -->
-                <div>
-                    <div class="row">
-                        <div class="col-md-6">
+    -->                <h2 class="tits" style = "color: #000000">Our Events</h2>
+                <div style="background-color: white;">
+                    <div class="row" style="background-color: white;" >
+                        <div class="col-md-6" style="background-color: white;">
                             <div class="flip">
                                 <div class="front" style="background-image: url({% static 'ece.jpg' %})">
                                     <h1 class="text-shadow">FIRST YEAR NIGHT</h1>
