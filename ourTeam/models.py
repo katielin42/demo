@@ -12,7 +12,10 @@ class Team(models.Model):
     description_4 = models.TextField(default="Shall be responsible for ...")
     description_5 = models.TextField(default="Shall be responsible for ...")
     email = models.EmailField()
+    isSenior = models.BooleanField(default=False)
+
 
 
     def __str__(self): # displays actual title on admin page
         return self.position
+  

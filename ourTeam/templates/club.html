@@ -16,6 +16,7 @@ padding-top: 60px; }
 
     <link href="{% static 'club.css' %}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
 
@@ -44,15 +45,8 @@ console.log(id)
 <br>
 <div class="container">
     <h1 style="text-align:center;font-size:26px;font-family: Molengo">Senior Executive Positions</h1>
-
-</div>
-
-<div class=" container">
-
-    <h1 class="mb-3" style="text-align:center;font-size:26px;font-family: Molengo"> Junior Executive Positions</h1>
-
     <div class="row">
-        {% for teams in team.all %}
+        {% for teams in srexecs.all %}
 
         <div class="col-md-4 mb-4 pb-4">
             <div class="card" style="width: 18rem">
@@ -85,6 +79,48 @@ console.log(id)
     </div>
 
 
+</div>
+
+<br>
+
+<div class=" container">
+
+    <h1 class="mb-3" style="text-align:center;font-size:26px;font-family: Molengo"> Junior Executive Positions</h1>
+
+    <div class="row">
+        {% for jteams in jrexecs.all %}
+
+        <div class="col-md-4 mb-4 pb-4">
+            <div class="card" style="width: 18rem">
+
+                <h5 class="card-title" style="padding-top: 10px;padding-left: 10px; padding-right: 20px;">
+                    <a href="#" class="openlink" id="link2" style=" color: #2063f7; text-decoration: none;"
+                       onclick="return more('{{jteams.position}}');">{{jteams.position}}<i
+                            class="{{jteams.icon}} fa-1x mr-1" style="padding-left: 20px;"></i></a></h5>
+            </div>
+    <br>
+            <div class="infobox" id="{{jteams.position}}">
+                <!--<div class="infobox" id="Events Representative">-->
+                <p class="card-text">
+                <ul>
+                    <li>{{jteams.description_1}}</li>
+                    <li>{{jteams.description_2}}</li>
+                    <li>{{jteams.description_3}}</li>
+                    <li>{{jteams.description_4}}</li>
+                    <li>{{jteams.description_5}}</li>
+                </ul>
+                </p>
+                <a href="#" style="padding-left: 15px; color: #8d97ad; text-decoration: none;"
+                   onclick="return less('{{jteams.position}}');">Show
+                    Less</a>
+            </div>
+            <br>
+
+        </div>
+        {% endfor %}
+    </div>
+
+
     <div class="space"></div>
 
 
@@ -93,4 +129,7 @@ console.log(id)
 
 
 </html>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
