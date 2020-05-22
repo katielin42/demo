@@ -76,12 +76,15 @@
     padding-left: 10px;
     padding-bottom: 8px;
     color: white;
+    rpga: (255,255,255,0.85);
+    transition:200 ms ease-in;
     }
 
     .uh:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 20px;
     color: white;
-    border-bottom:1px;
+    rpga: (255,255,255,1);
     }
 
 
@@ -112,12 +115,12 @@
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto"
                      style="font-size: 18px; padding-right:200px; font-family:Source Sans Pro">
-                    <a class="nav-item nav-link" style="color:white;" href="{% url 'home' %}">Home</a>
-                    <a class="nav-item nav-link" style="color:white;" href="{% url 'club' %}">The Club</a>
-                    <a class="nav-item nav-link" style="color:white;" href="{% url 'team' %}">Our Team</a>
-                    <a class="nav-item nav-link" style="color:white;" href="{% url 'allposts' %}">Newsletter</a>
-                    <a class="nav-item nav-link" style="color:white;" href="{% url 'events' %}">Events</a>
-                    <a class="nav-item nav-link" target="_blank" style="color:white;"
+                    <a class="uh" href="{% url 'home' %}">Home</a>
+                    <a class="uh" href="{% url 'club' %}">The Club</a>
+                    <a class="uh" href="{% url 'team' %}">Our Team</a>
+                    <a class="uh" href="{% url 'allposts' %}">Newsletter</a>
+                    <a class="uh" href="{% url 'events' %}">Events</a>
+                    <a class="uh" target="_blank"
                        href="https://eeclubmerch.square.site/s/shop">Merch</a>
 
                 </div>
@@ -399,12 +402,6 @@ b{
                 <p class="">
                     <small class="text-white-50">© Electrical Engineering Club {% now "Y" %}. All Rights
                         Reserved.
-                    </small>
-                    <small>
-                        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik"
-                                              title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
-                                                                                  title="Flaticon">www.flaticon.com</a>
-                        </div>
                     </small>
                 </p>
             </div>
