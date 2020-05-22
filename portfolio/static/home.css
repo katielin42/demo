@@ -1,20 +1,14 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300,500);
 @import url(https://fonts.googleapis.com/css?family=Molengo);
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
 .jumbotron {
     background-image: url('ee.jpg');
     background-size: cover;
     height:  65%; /*500px*/
     width: 100%;
 }
-/**
-.slidepic {
 
-role="listbox" style=" width:100%; height: 1000px !important;
-    height:  500px; /*500px
-    width: 500px;
-    float:center;
-} */
 
 
 
@@ -86,60 +80,6 @@ h5 {
 
   <style>
 
-  .lnr-printer {
-  color: #000000;
-  font-size: 100px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-}
-
-.lnr-users{
-  color: #000000;
-  font-size: 100px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-}
-
-.lnr-book{
-  color: #000000;
-  font-size: 100px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-}
-
-.lnr-dinner{
-  color: #000000;
-  font-size: 100px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-}
-
-.lnr-lighter{
-  color: #000000;
-  font-size: 100px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-}
-
-.lnr-coffee-cup{
-  color: #000000;
-  font-size: 100px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-}
-
 .header{
   color: #000000;
   margin-left: auto;
@@ -147,10 +87,18 @@ h5 {
 }
 
 body {
-  font-size: 10px;
+  font-size: 15px;
   font-family: sans-serif;
   color: #555;
 
+}
+
+.tits{
+    font-size: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family:
+    color: #000000;
 }
 
 
