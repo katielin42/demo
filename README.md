@@ -5,9 +5,10 @@ Clourflair: provides end SSL encryption to protect website from malicious HTTP r
 Lets Encrypt: proides a digital certificate so our site becomes httpS. but need to renew bc it expires every 2 months (use netify). 
 
 <p align="center">
-  <img src="https://imgur.com/a8pExaX" alt="EE-Club">
+  <img src="https://i.imgur.com/a8pExaX.png" alt="EE-Club">
 </p>
-# University of Alberta, Electrical Engineering Club Website
+
+## University of Alberta, Electrical Engineering Club Website
 
 This project
 
