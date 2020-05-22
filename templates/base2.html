@@ -58,10 +58,25 @@
       background: rgba(15, 48, 95, 0.8);
     }
 
+    .uh{
+    text-decoration: none;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    color: white;
+    }
+
+    .uh:hover{
+    text-decoration: underline;
+    color: white;
+    border-bottom:1px;
+    }
+
     </style>
     <!-- Custom styles for this template -->
     <link href="{% static 'basetemplate.css' %}" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 </head>
 
 <header>
@@ -79,13 +94,12 @@
             </button>
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto" style="font-size: 18px; padding-right:200px; font-family:Roboto Mono">
-                    <a class="nav-item nav-link" style="color:white;" href="{% url 'home' %}">Home</a>
-                    <a class="nav-item nav-link" style="color:white;" href="{% url 'club' %}">The Club</a>
-                    <a class="nav-item nav-link" style="color:white;" href="{% url 'team' %}">Our Team</a>
-                    <a class="nav-item nav-link" style="color:white;" href="{% url 'allposts' %}">Newsletter</a>
-                    <a class="nav-item nav-link" style="color:white;" href="{% url 'events' %}">Events</a>
-                    <a class="nav-item nav-link" target="_blank" style="color:white;"
-                       href="https://eeclubmerch.square.site/s/shop">Merch</a>
+                    <a class="uh" href="{% url 'home' %}">Home</a>
+                    <a class="uh" href="{% url 'club' %}">The Club</a>
+                    <a class="uh" href="{% url 'team' %}">Our Team</a>
+                    <a class="uh" href="{% url 'allposts' %}">Newsletter</a>
+                    <a class="uh" href="{% url 'events' %}">Events</a>
+                    <a class="uh" target="_blank" href="https://eeclubmerch.square.site/s/shop">Merch</a>
                 </div>
             </div>
             </div>
