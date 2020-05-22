@@ -436,17 +436,14 @@ b{
     $(document).ready(function(){
 
         $('#jq_butt').click(function(){
+           if ($(window).scrollTop()<500){
             $('nav').toggleClass('scrolled')
+            }
          })
         $(window).scroll(function(){
         $('nav').toggleClass('scrolled', $(this).scrollTop()>500)
     })
     })
-
-
-
-
-
 
 </script>
 
