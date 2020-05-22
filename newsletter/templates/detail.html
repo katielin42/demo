@@ -7,6 +7,7 @@
 <style>
 body{
 padding-top: 60px; }
+
 </style>
 
 <body>
@@ -18,24 +19,24 @@ padding-top: 60px; }
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <title>{{post.publication|date:'F'}} Newsletter</title>
 </header>
- <br>
+<br>
 </body>
 <main role="main">
     <div class="container"> <!-- spacing -->
 
-        <h2 style="font-family:Oswald"class="text-center pt-4">{{post.title}}</h2>
+        <h2 style="font-family:Oswald" class="text-center pt-4">{{post.title}}</h2>
         <br/>
         <hr/>
-    <div class="row">
-        <div class=" container blog-post">
+        <div class="row">
+            <div class=" container blog-post">
 
-            <p class="blog-post-meta" style="font-family:Lato" >{{post.publication}} </p>
-            <p class="blurb" style="font-family: Droid Sans;padding-left:40px;">{{post.body | linebreaks }}</p>
+                <p class="blog-post-meta" style="font-family:Lato">{{post.publication}} </p>
+                <p class="blurb" style="font-family: Droid Sans;padding-left:40px;">{{post.body | linebreaks }}</p>
+            </div>
+
+            <div>
+            </div>
         </div>
-
-        <div>
-    </div>
-    </div>
     </div>
 </main>
 

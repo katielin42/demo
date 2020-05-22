@@ -7,7 +7,7 @@
     <link href="{% static 'allposts.css' %}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lekton" rel="stylesheet">
 
     <title>{{tabTitle}}</title>
@@ -15,6 +15,7 @@
 <style>
 body{
 padding-top: 60px; }
+
 
 </style>
 
@@ -41,7 +42,7 @@ padding-top: 60px; }
                     {{post.title}}</h3>
                 <p class="text" style="font-family: Lato;">{{post.publication.date}} </p>
 
-                <p class="blurb" style="font-family:Droid Sans" >{{post.body|truncatewords:100}}</p>
+                <p class="blurb" style="font-family:Droid Sans">{{post.body | linebreaks | truncatewords:50}}</p>
                 <a class="btn btn-outline-secondary" href="{% url 'detail' post.id %}"
                    style="float: right; margin-right:20px;" role="button">Read More</a>
 
