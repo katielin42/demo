@@ -12,7 +12,7 @@ If you wish to clone this repository onto your local machine for developmental o
 ### Prerequisites
 
 * `git` should be installed, we recommend the latest long-term support version.
-* PyCharm, we recommend the latest long-term support version
+* We recommend using PyCharm for this project, with the latest long-term support version
 
 ### Installing
 
