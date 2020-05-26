@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u-#14hu9nu*05kz%@gp=%dny*f2il=-fhl38^(31vwp@n^rlr#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['159.65.97.132','eeclub.ca','www.eeclub.ca']
 
 
 # Application definition
@@ -82,9 +82,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'eesitedb',
         'USER':'postgres',
-        'PASSWORD':'newpassword',
-        'HOST':'localhost',
-        'PORT':'', # 5433
+        'PASSWORD':'password1234',
+       'HOST':'localhost',
+        'PORT':'5432', # 5433
     }
 }
 
@@ -126,15 +126,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'portfolio/static/')
+    os.path.join(BASE_DIR, 'portfolio/static')
 ]
 MEDIA_URL ='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
 
