@@ -8,6 +8,7 @@
 body{
 padding-top: 60px; }
 
+
 </style>
 
 <body>
@@ -22,71 +23,76 @@ padding-top: 60px; }
 </body>
 <main>
 
-<div class="py-5 team4 ">
-    <div class="container">
-        <div class="row justify-content-center mb-4">
-            <div class="col-md-7 text-center">
-                <h2 style="font-family: 'Molengo'; color: #000000;" class="mb-3">Meet the Team</h2>
-                <h6 style="font-family: 'Droid Sans'" class="subtitle">We are a team of individuals who are passionate
-                    about making the EE student experience EExceptional! </h6>
+    <div class="py-5 team4 ">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-7 text-center">
+                    <h2 style="font-family: 'Molengo'; color: #000000;" class="mb-3">Meet the Team</h2>
+                    <h6 style="font-family: 'Droid Sans'" class="subtitle">We are a team of individuals who are
+                        passionate
+                        about making the EE student experience EExceptional! </h6>
+                </div>
             </div>
-        </div>
-        <div class="space"></div>
-        <h3 style="font-family: 'Molengo'; text-align:center">Senior Execs</h3>
-        <div class="row">
-            <!--rendering members of meet the team-->
-            {% for teams in srexecs.all%}
-            <!-- column  -->
-            <div class="col-lg-3 mb-4">
-                <!-- Row -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <img src={{teams.profile_pic.url}} alt="wrapkit" class="img-fluid rounded-circle"/>
-                    </div>
-                    <div class="col-md-12 text-center">
-                        <div class="pt-2">
-                            <h4 class="mt-4 mb-0" style="font-family:Molengo">{{ teams.name }}</h4>
-                            <a href="../club/#{{teams.position}}"> <h5 class="subtitle mb-1" style="font-family:Droid Sans; font-size:16px">{{ teams.position}}
-                           </h5></a>
-                            <a href="mailto: {{teams.email}} ">{{teams.email}} </a>
+            <div class="space"></div>
+            <h3 style="font-family: 'Molengo'; text-align:center">Senior Execs</h3>
+            <div class="row">
+                <!--rendering members of meet the team-->
+                {% for teams in srexecs.all%}
+                <!-- column  -->
+                <div class="col-lg-3 mb-4">
+                    <!-- Row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src={{teams.profile_pic.url}} alt="wrapkit" class="img-fluid rounded-circle"/>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="pt-2">
+                                <h4 class="mt-4 mb-0" style="font-family:Molengo">{{ teams.name }}</h4>
+                                <a href="../club/#{{teams.position}}"><h5 class="subtitle mb-1"
+                                                                          style="font-family:Droid Sans; font-size:16px">
+                                    {{ teams.position}}
+                                </h5></a>
+                                <a href="mailto: {{teams.email}} ">{{teams.email}} </a>
+                            </div>
                         </div>
                     </div>
+                    <!-- Row -->
                 </div>
-                <!-- Row -->
+                {% endfor %}
+                <!--      testing pfp scaling stuff: <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" alt="wrapkit" class="img-fluid rounded-circle"/> -->
             </div>
-            {% endfor %}
-            <!--      testing pfp scaling stuff: <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" alt="wrapkit" class="img-fluid rounded-circle"/> -->
-        </div>
-    </div>
-    <div class="space"></div>
-    <h3 style="font-family: 'Molengo'; text-align:center">Junior Execs</h3>
-    <div class="row">
-        <!--rendering members of meet the team-->
-        {% for jteams in jrexecs.all%}
-        <!-- column  -->
-        <div class="col-lg-3 mb-4">
-            <!-- Row -->
+            <div class="space"></div>
+            <h3 style="font-family: 'Molengo'; text-align:center">Junior Execs</h3>
             <div class="row">
-                <div class="col-md-12">
-                    <img src={{jteams.profile_pic.url}} alt="wrapkit" class="img-fluid rounded-circle"/>
-                </div>
-                <div class="col-md-12 text-center">
-                    <div class="pt-2">
-                        <h4 class="mt-4 mb-0" style="font-family:Molengo">{{ jteams.name }}</h4>
-                        <a href="../club/#{{jteams.position}}">
-                        <h5 class="subtitle mb-1" style="font-family:Droid Sans; font-size:16px">{{jteams.position}}
-                            </h5></a>
-                        <a href="mailto: {{jteams.email}} " style="font-family:Droid Sans; font-size:14px">{{jteams.email}} </a>
+                <!--rendering members of meet the team-->
+                {% for jteams in jrexecs.all%}
+                <!-- column  -->
+                <div class="col-lg-3 mb-4">
+                    <!-- Row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src={{jteams.profile_pic.url}} alt="wrapkit" class="img-fluid rounded-circle"/>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="pt-2">
+                                <h4 class="mt-4 mb-0" style="font-family:Molengo">{{ jteams.name }}</h4>
+                                <a href="../club/#{{jteams.position}}">
+                                    <h5 class="subtitle mb-1" style="font-family:Droid Sans; font-size:16px">
+                                        {{jteams.position}}
+                                    </h5></a>
+                                <a href="mailto: {{jteams.email}} " style="font-family:Droid Sans; font-size:14px">{{jteams.email}} </a>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Row -->
                 </div>
+                {% endfor %}
+                <!--      testing pfp scaling stuff: <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" alt="wrapkit" class="img-fluid rounded-circle"/> -->
             </div>
-            <!-- Row -->
         </div>
-        {% endfor %}
-        <!--      testing pfp scaling stuff: <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" alt="wrapkit" class="img-fluid rounded-circle"/> -->
+
     </div>
-</div>
-</div>
+    </div>
 </main>
 <br>
 <br>
