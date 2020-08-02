@@ -1,61 +1,43 @@
 {% extends 'base2.html' %}
 {% load static %}
 {% block content %}
+<!-- page showing all newsletters -->
 <html lang="en">
-<header>
+<head>
     <meta charset="UTF-8">
     <link href="{% static 'allposts.css' %}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lekton" rel="stylesheet">
-
     <title>{{tabTitle}}</title>
-</header>
-<style>
-body{
-padding-top: 60px; }
+</head>
 
+<body>
+<div class="container" style="width:55%">
+    <br/>
+    <br/>
+    <h3 style="font-family: Molengo; margin-right:20px;">{{pageTitle}}</h3>
+    <form class="form-inline">
+        <label style="font-family: Droid Sans; margin-right:20px;">Subscribe to our monthly newsletter!</label>
+        <a class="btn btn-outline-primary" href="https://mailchi.mp/a7f9e475f39a/ee-club-newsletter-signup"
+           target="_blank" style="float: right; margin-right:20px;" role="button">Subscribe</a>
+    </form>
+    <hr/>
+    <div class="row ">
+        {% for post in posts.all %}
+        <div class="onepost" style=" color:black;">
+            <h3 class="text" style=" padding-left: 20px; padding-top: 20px; font-family: Oswald;">
+                {{post.title}}</h3>
+            <p class="text" style="font-family: Lato;">{{post.publication.date}} </p>
 
-</style>
-
-<main>
-    <body>
-    <div class="container" style="width:55%"> <!-- spacing -->
-        <br/>
-        <br/>
-        <h3 style="font-family: Molengo; margin-right:20px;">{{pageTitle}}</h3>
-        <!--<h3>Subscribe to our monthly newsletter! mb-2 mr-sm-2 ml-10</h3>-->
-        <form class="form-inline">
-            <label style="font-family: Droid Sans; margin-right:20px;">Subscribe to our monthly newsletter!</label>
-            <!--style="width:220px; height:35px;margin-left:190px;"-->
-            <a class="btn btn-outline-primary" href="https://mailchi.mp/a7f9e475f39a/ee-club-newsletter-signup"
-               target="_blank" style="float: right; margin-right:20px;" role="button">Subscribe</a>
-        </form>
-        <hr/>
-        <div class="row ">
-            {% for post in posts.all %}
-            <div class="onepost" style=" color:black;">
-
-                <!--padding-left: 20px; padding-right: 40px; font-family: Lato;-->
-                <h3 class="text" style=" padding-left: 20px; padding-top: 20px; font-family: Oswald;">
-                    {{post.title}}</h3>
-                <p class="text" style="font-family: Lato;">{{post.publication.date}} </p>
-
-                <p class="blurb" style="margin-left: 20px;padding-left: 20px;font-family:Droid Sans">{{post.body | linebreaks | truncatewords:50}}</p>
-                <a class="btn btn-outline-secondary" href="{% url 'detail' post.id %}"
-                   style="float: right; margin-right:20px;" role="button">Read More</a>
-
-
-                <!--<a href="{% url 'detail' post.id %}"></a>-->
-            </div>
-
-
-            {% endfor %}
-
+            <p class="blurb" style="margin-left: 20px;padding-left: 20px;font-family:Droid Sans">{{post.body | linebreaks | truncatewords:50}}</p>
+            <a class="btn btn-outline-secondary" href="{% url 'detail' post.id %}"
+               style="float: right; margin-right:20px;" role="button">Read More</a>
         </div>
+        {% endfor %}
     </div>
-    </body>
-</main>
+</div>
+</body>
+
 {% endblock %}
 </html>

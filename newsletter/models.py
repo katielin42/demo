@@ -8,8 +8,3 @@ class Newsletter(models.Model):
 
     def __str__(self): # displays actual title on admin page
         return self.title
-
-    '''
-        def summary(self):
-            return self.body[:300]
-    '''
