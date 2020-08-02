@@ -1,10 +1,25 @@
-@import url(//fonts.googleapis.com/css?family=Lato:300,500);
-
-
-h2{
-    font-family:'Lato';
-}
-
-.centerboi{
+.centering {
     margin: 0 auto;
+    padding: 100 px 0 0;
+    margin-left: auto;
+    margin-right: auto;
 }
+.calendarTest{
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+.calendarTest iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+body{
+    padding-top: 70px;
+ }
+
+ h2{
+   text-align: center;
+   padding-top: 10px;
+ }
