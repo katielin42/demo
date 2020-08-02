@@ -3,19 +3,27 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans);
 
 .jumbotron {
-    background-image: url('ee.jpg');
-    background-size: cover;
-    height:  65%; /*500px*/
-    width: 100%;
+  background-image: url('ee.jpg');
+  background-size: cover;
+  height:  65%; /*500px*/
+  width: 100%;
 }
 
+body {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #555;
+}
 
-
+/* GLOBAL DEFAULTS */
 
 h1 {
  font-family: 'Molengo', Georgia, Times, serif;
  font-size: 64px;
  line-height: 80px;
+}
+h2{
+font-family:Molengo;
 }
 h5 {
  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
@@ -23,7 +31,176 @@ h5 {
  line-height: 25px;
 }
 
+p{
+font-family:Droid Sans;
+}
 
+/* CAROUSEL */
+
+.first-slide {
+  height:89%;
+  width:100%;
+  max-width:100%;
+  object-fit:cover;
+  overflow: hidden;
+}
+.second-slide {
+  height:89%;
+  width:100%;
+  max-width:100%;
+  object-fit:cover;
+  overflow: hidden;
+}
+
+.third-slide {
+  height:89%;text-align: center;
+  width:100%;
+  max-width:100%;
+  object-fit:cover;
+  overflow: hidden;
+}
+
+.carousel-caption.text-left > h1 {
+  font-size:64px;
+  margin-bottom:60px;
+}
+.carousel-caption.text-left > h5 {
+  font-size:36px;
+}
+.carousel-caption.text-right {
+  top:40;
+  bottom:auto;
+  color: white;
+}
+
+/* LNR */
+
+.container.icons {
+  text-align: center;
+}
+
+.lnr-cog {
+  color: #000000;
+  font-size: 100px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.lnr-users{
+  color: #000000;
+  font-size: 100px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.lnr-book{
+  color: #000000;
+  font-size: 100px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.lnr-dinner{
+  color: #000000;
+  font-size: 100px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.lnr-lighter{
+  color: #000000;
+  font-size: 100px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+
+}
+
+.lnr-coffee-cup{
+  color: #000000;
+  font-size: 100px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+#microwave-img{
+  width: 100px;
+  height:100px;
+  margin-bottom:0px;
+  float:top;
+}
+
+.header{
+  color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header.microwave {
+  margin-top:10px;
+}
+
+.titles{
+    font-size: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: Molengo;
+    color: #000000;
+
+}
+
+/* EVENTS */
+.container.events {
+  text-align: center;
+}
+
+.container.events > div {
+  background-color: white;
+}
+
+#event-row {
+  justify-content: center;
+}
+
+#event-row > div{
+  background-color: white;
+}
+.text-shadow {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: PT Sans Narrow;
+  font-weight:50;
+  font-size: 72px;
+  line-height:60px;
+  padding-top:60px;
+}
+
+#first-card {
+  background-image: url(ece-week.jpg);
+}
+#second-card {
+  background-image: url(geer_week.jpg);
+}
+#third-card {
+  background-image: url(grad-3.jpg);
+}
+#fourth-card {
+  background-image: url(geer_week.jpg);
+}
+
+/* FLIP CARDS */
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
@@ -76,31 +253,6 @@ h5 {
     margin-bottom: 100px;
 
 }
-
-
-  <style>
-
-.header{
-  color: #000000;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body {
-  font-size: 15px;
-  font-family: sans-serif;
-  color: #555;
-
-}
-
-.tits{
-    font-size: 60px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    font-family:
-    color: #000000;
-}
-
 
 .flip {
   position: relative;
@@ -178,7 +330,6 @@ z-index: -1!important;
 position: relative;
 z-index: -1 !important;
 }
-        </style>
 
 /* TESTING THE NEW FLIPCARDS */
 
