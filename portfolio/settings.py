@@ -26,7 +26,7 @@ SECRET_KEY = 'u-#14hu9nu*05kz%@gp=%dny*f2il=-fhl38^(31vwp@n^rlr#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['159.65.97.132','eeclub.ca','www.eeclub.ca']
+ALLOWED_HOSTS = ['159.65.97.132','eeclub.ca','www.eeclub.ca', 'localhost','127.0.0.1']
 
 
 # Application definition
@@ -82,8 +82,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'eesitedb',
         'USER':'postgres',
-        'PASSWORD':'password1234',
-       'HOST':'localhost',
+        'PASSWORD':'password',
+        'HOST':'localhost',
         'PORT':'5432', # 5433
     }
 }
@@ -127,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = [
+STATICFILES_DIRS = [ # 'portfolio/static'
     os.path.join(BASE_DIR, 'portfolio/static')
 ]
 MEDIA_URL ='/media/'

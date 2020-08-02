@@ -12,6 +12,11 @@
     width: 100%;
 
 }
+
+body{
+    padding-top: 60px;
+}
+
 h2{
     font-family: Lato;
 }

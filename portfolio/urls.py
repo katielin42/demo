@@ -22,15 +22,12 @@ from portfolio import views
 import newsletter.views
 import ourTeam.views
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name= 'home'),
     path('team/', include('ourTeam.urls')),
-    # path('blog/', include('blog.urls')), # groups all urls with newsletter/ to be sent to the blog app
     path('newsletter/', include('newsletter.urls')),
     path('events/', views.events, name = 'events'),
     path('club/', ourTeam.views.club, name='club'),
     path('search/', newsletter.views.filteredposts, name = 'search'),
-    path('test/', views.test, name = 'test')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
