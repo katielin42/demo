@@ -4,12 +4,9 @@
 <html lang="en">
 
 <head>
-    <!--<title>EE Club</title>-->
     <link rel="shortcut icon" type="image/png" href="{% static 'EE.png' %}"/>
-    <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
-</head>
-<head>
-
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -22,24 +19,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- Favicons -->
-    <!--    <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">-->
-    <!--    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">-->
-    <!--    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">-->
-    <!--    <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">-->
-    <!--    <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">-->
-    <!--    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">-->
-    <!--    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">-->
     <meta name="theme-color" content="#563d7c">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--    <link href="album.css" rel="stylesheet">-->
-
-
-    <!--    <link href="album.css" rel="stylesheet">-->
+    <!-- stylesheet here -->
 
 
     <style>
@@ -88,11 +69,6 @@
     rpga: (255,255,255,1);
     }
 
-
-
-
-
-
     </style>
     <!-- Custom styles for this template -->
     <link href="{% static 'basetemplate.css' %}" rel="stylesheet">
@@ -100,16 +76,13 @@
 </head>
 
 <header>
-    <!--          <p> background: rgba(21, 47, 79, 0.8);</p>-->
     <navbar>
-
         <nav class="navbar navbar-expand-lg navbar-dark ">
-            <!-- justines change -->
             <a class="navbar-brand" href="{% url 'home' %}" style="padding-left:30px ">
                 <img src="{% static 'EEClub_Logo_Thicc.png' %}" height="45" class="d-inline-block align-top"
                      alt="Electrical Engineering Club">
             </a>
-            <button id="jq_butt" class="navbar-toggler" type="button" data-toggle="collapse"
+            <button id="jq_scroll" class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -124,7 +97,6 @@
                     <a class="uh" href="{% url 'events' %}">Events</a>
                     <a class="uh" target="_blank"
                        href="https://eeclubmerch.square.site/s/shop">Merch</a>
-
                 </div>
             </div>
         </nav>
@@ -137,65 +109,6 @@
 
 </main>
 
-
-<!--<div class="mt-5 pt-5 pb-5 footer" >-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-5 col-xs-12 about-company">-->
-<!--                <h2 style="color:white;">Connect with us!</h2>-->
-<!--                <p><a href="https://www.facebook.com/UAlbertaElectricalEngineeringClub/"><i-->
-<!--                        class="fa fa-facebook-square fa-4x mr-1" style="padding-right: 10px;"></i></a>-->
-<!--                    <a href="https://instagram.com"><i-->
-<!--                        class="fa fa-instagram fa-4x mr-1" style="padding-right: 10px;"></i></a>-->
-<!--                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">-->
-<!--                    <a href="https://discord.com"><i-->
-<!--                        class="fa fa-discord fa-4x mr-1 " ></i></a>-->
-<!--                    &lt;!&ndash; Search form &ndash;&gt;-->
-
-<!--                </p>-->
-<!--            </div>-->
-<!--            <div class="col-lg-3 col-xs-12 links">-->
-<!--                <h4 class="mt-lg-0 mt-sm-3"  style="color:white;">Links</h4>-->
-<!--                <ul class="m-0 p-0" style="color:white;">-->
-<!--                    <li> <a href="#">Lorem ipsum</a></li>-->
-<!--                    <li> <a href="#">Nam mauris velit</a></li>-->
-<!--                    <li> <a href="#">Etiam vitae mauris</a></li>-->
-<!--                    <li> <a href="#">Fusce scelerisque</a></li>-->
-<!--                    <li> <a href="#">Sed faucibus</a></li>-->
-<!--                    <li> <a href="#">Mauris efficitur nulla</a></li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-xs-12 location">-->
-<!--                <h4 class="mt-lg-0 mt-sm-4" style="color:white;">Location</h4>-->
-<!--                <p style="color:white;">Engineering Teaching and Learning Center <br/>-->
-<!--                    ETLC 2-040 B (right end of clubs hallway)  <br/>-->
-<!--                    116 St NW-->
-<!--                    Edmonton, AB, Canada-->
-<!--                    T6G 2V4</p>-->
-<!--                <p class="mb-0" style="color:white;"><i class="fa fa-phone mr-3" style="color:white;"></i>(541) 754-3010</p>-->
-<!--                <p><i class="fa fa-envelope-o mr-3" style="color:white;"></i><a href="mailto:someone@yoursite.com">eeclub@ualberta.ca</a>  </p>-->
-
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row mt-5">-->
-<!--            <div class="col copyright">-->
-<!--                <p class=""><small class="text-white-50">© Electrical Engineering Club {% now "Y" %}. All Rights-->
-<!--                    Reserved.</small></p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--</html>-->
-<!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"-->
-<!--        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"-->
-<!--        crossorigin="anonymous"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"-->
-<!--        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"-->
-<!--        crossorigin="anonymous"></script>-->
-<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"-->
-<!--        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"-->
-<!--        crossorigin="anonymous"></script>-->
 
 <style>
     .site-footer
@@ -332,10 +245,6 @@ b{
 
 }
 
-
-
-
-
 </style>
 
 
@@ -413,7 +322,7 @@ b{
                     <li><a href="https://www.facebook.com/UAlbertaElectricalEngineeringClub/"><i
                             class="fa fa-facebook-square fa-3x mr-1" style="padding-right: 10px;"></i></a></li>
                     <li><a href="https://www.instagram.com/eeclub_uofa/"><i class="fa fa-instagram fa-3x mr-1"
-                                                           style="padding-right: 10px;"></i></a></li>
+                                                                            style="padding-right: 10px;"></i></a></li>
                     <li><a href="mailto:eeclub@ualberta.ca"> <i class="fa fa-envelope-square fa-3x mr-1"
                                                                 style="padding-right: 10px;"></i></a></li>
                     <li><a href="https://mailchi.mp/a7f9e475f39a/ee-club-newsletter-signup"> <i
@@ -433,10 +342,9 @@ b{
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 <script>
-
     $(document).ready(function(){
 
-        $('#jq_butt').click(function(){
+        $('#jq_scroll').click(function(){
            if ($(window).scrollTop()<500){
             $('nav').toggleClass('scrolled')
             }
@@ -445,8 +353,6 @@ b{
         $('nav').toggleClass('scrolled', $(this).scrollTop()>500)
     })
     })
-
 </script>
 
 
-<!--                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">-->
