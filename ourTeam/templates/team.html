@@ -3,22 +3,14 @@
 {% block content %}
 
 <html lang="en">
-
-<style>
-body{
-padding-top: 60px; }
-
-
-</style>
-
 <body>
 <header>
     <title>Our Team</title>
 </header>
 <!-- Justines change -->
-<link href="{% static 'team.css' %}" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+<link href="{% static 'team.css' %}" rel="stylesheet">
 <!-- Katies change -->
 </body>
 <main>
@@ -27,14 +19,14 @@ padding-top: 60px; }
         <div class="container">
             <div class="row justify-content-center mb-4">
                 <div class="col-md-7 text-center">
-                    <h2 style="font-family: 'Molengo'; color: #000000;" class="mb-3">Meet the Team</h2>
-                    <h6 style="font-family: 'Droid Sans'" class="subtitle">We are a team of individuals who are
+                    <h2 class="mb-3">Meet the Team</h2>
+                    <h6 class="subtitle">We are a team of individuals who are
                         passionate
                         about making the EE student experience EExceptional! </h6>
                 </div>
             </div>
             <div class="space"></div>
-            <h3 style="font-family: 'Molengo'; text-align:center">Senior Execs</h3>
+            <h3>Senior Execs</h3>
             <div class="row">
                 <!--rendering members of meet the team-->
                 {% for teams in srexecs.all%}
@@ -47,9 +39,8 @@ padding-top: 60px; }
                         </div>
                         <div class="col-md-12 text-center">
                             <div class="pt-2">
-                                <h4 class="mt-4 mb-0" style="font-family:Molengo">{{ teams.name }}</h4>
-                                <a href="../club/#{{teams.position}}"><h5 class="subtitle mb-1"
-                                                                          style="font-family:Droid Sans; font-size:16px">
+                                <h4 class="mt-4 mb-0">{{ teams.name }}</h4>
+                                <a href="../club/#{{teams.position}}"><h5 class="subtitle mb-1">
                                     {{ teams.position}}
                                 </h5></a>
                                 <a href="mailto: {{teams.email}} ">{{teams.email}} </a>
@@ -62,7 +53,7 @@ padding-top: 60px; }
                 <!--      testing pfp scaling stuff: <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" alt="wrapkit" class="img-fluid rounded-circle"/> -->
             </div>
             <div class="space"></div>
-            <h3 style="font-family: 'Molengo'; text-align:center">Junior Execs</h3>
+            <h3>Junior Execs</h3>
             <div class="row">
                 <!--rendering members of meet the team-->
                 {% for jteams in jrexecs.all%}
@@ -75,12 +66,12 @@ padding-top: 60px; }
                         </div>
                         <div class="col-md-12 text-center">
                             <div class="pt-2">
-                                <h4 class="mt-4 mb-0" style="font-family:Molengo">{{ jteams.name }}</h4>
+                                <h4 class="mt-4 mb-0">{{ jteams.name }}</h4>
                                 <a href="../club/#{{jteams.position}}">
-                                    <h5 class="subtitle mb-1" style="font-family:Droid Sans; font-size:16px">
+                                    <h5 class="subtitle mb-1">
                                         {{jteams.position}}
                                     </h5></a>
-                                <a href="mailto: {{jteams.email}} " style="font-family:Droid Sans; font-size:14px">{{jteams.email}} </a>
+                                <a href="mailto: {{jteams.email}}">{{jteams.email}} </a>
                             </div>
                         </div>
                     </div>
