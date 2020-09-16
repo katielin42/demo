@@ -79,6 +79,5 @@ This project is licensed under the GNU AGPLv3 License - see [LICENSE.md](LICENSE
 
 ## Acknowledgments
 
-* Hat tip to StackOverflow, 
-* Inspired by other discipline club's websites that looked prettier than ours, particularly Engineering Physics Club and Computer Engineering Club. 
-* etc
+* Hat tip to StackOverflow, CSS & Html documentation
+* Inspired by Engineering Physics Club and Computer Engineering Club. 
