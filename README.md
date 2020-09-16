@@ -3,7 +3,7 @@
   <img src="https://i.imgur.com/a8pExaX.png" alt="EE-Club">
 </p>
 
-This project is a [website](eeclub.ca), made for the Electrical Engineering Club at the University of Alberta. 
+This project is a [website](http://eeclub.ca), made for the Electrical Engineering Club at the University of Alberta. 
 
 ## Getting Started
 
