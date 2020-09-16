@@ -46,9 +46,6 @@ $ python manage.py runserver
 ```
 and start playing around with the website. 
 
-
-###### THE BELOW SECTIONS ARE NOT DONE RIGHT NOW AND WILL BE UPDATED ONCE WE DEPLOY EVERYTHING AND THIS BECOMES AN OFFICIAL THING. YA
-
 ## Deployment
 
 Deplyment was done through Digital Ocean. Currently the project sits in an Nginx server on one of DO's droplets, but we will be migrating to cPanel very soon.
