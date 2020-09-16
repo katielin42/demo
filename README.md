@@ -80,5 +80,6 @@ This project is licensed under the GNU AGPLv3 License - see [LICENSE.md](LICENSE
 
 ## Acknowledgments
 
-* Hat tip to StackOverflow, CSS & Html documentation
+* Hat tip to StackOverflow, CSS & Html documentation, and the dude who tried to hack our website which made us realise we had backend security vulnerabilities 
+* Mega hat tip to all of our beta testers and feedback doners (aka EE Club Execs)
 * Inspired by Engineering Physics Club and Computer Engineering Club
