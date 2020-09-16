@@ -57,6 +57,10 @@ Deplyment was done through Digital Ocean. Currently the project sits in an Nginx
 ## Built With
 
 * [Django](https://www.djangoproject.com/)
+* Python
+* HTML & CSS
+* A dash of JS and jQuery (absolute magic)
+* SQLite3, postgreSQL
 
 ## Contributing
 
@@ -80,4 +84,4 @@ This project is licensed under the GNU AGPLv3 License - see [LICENSE.md](LICENSE
 ## Acknowledgments
 
 * Hat tip to StackOverflow, CSS & Html documentation
-* Inspired by Engineering Physics Club and Computer Engineering Club. 
+* Inspired by Engineering Physics Club and Computer Engineering Club
