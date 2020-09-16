@@ -3,7 +3,7 @@
   <img src="https://i.imgur.com/a8pExaX.png" alt="EE-Club">
 </p>
 
-This project is a website, made for the Electrical Engineering Club at the University of Alberta. 
+This project is a [website](eeclub.ca), made for the Electrical Engineering Club at the University of Alberta. 
 
 ## Getting Started
 
@@ -50,11 +50,9 @@ and start playing around with the website.
 ###### THE BELOW SECTIONS ARE NOT DONE RIGHT NOW AND WILL BE UPDATED ONCE WE DEPLOY EVERYTHING AND THIS BECOMES AN OFFICIAL THING. YA
 
 ## Deployment
-Possible security measures: 
-Clourflair: provides end SSL encryption to protect website from malicious HTTP requests such as DDoS attacks. 
-Lets Encrypt: proides a digital certificate so our site becomes httpS. but need to renew bc it expires every 2 months (use netify). 
 
-Add additional notes about how to deploy this on a live system
+Deplyment was done through Digital Ocean. Currently the project sits in an Nginx server on one of DO's droplets, but we will be migrating to cPanel very soon.
+
 
 ## Built With
 
@@ -62,18 +60,18 @@ Add additional notes about how to deploy this on a live system
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Upcoming feature. 
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Upcoming feature. 
 
-## Head Developers
+## Dev Team
 
 * **Justine Ventura** - GitHub - [j-vent](https://github.com/j-vent)
 * **Katie Lin** - GitHub - [katielin42](https://github.com/katielin42)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Marco Romero** - GitHub -[mrcromero](https://github.com/mrcromero)
+* **Ethan Cinq-Mars** 
 
 ## License
 
@@ -81,6 +79,6 @@ This project is licensed under the GNU AGPLv3 License - see [LICENSE.md](LICENSE
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
+* Hat tip to StackOverflow, 
+* Inspired by other discipline club's websites that looked prettier than ours, particularly Engineering Physics Club and Computer Engineering Club. 
 * etc
