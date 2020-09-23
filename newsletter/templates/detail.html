@@ -5,18 +5,16 @@
 <html lang="en">
 
 <style>
-body{
-padding-top: 60px; }
 
 </style>
 
 <body>
 <header>
     <meta charset="UTF-8">
-    <link href="{% static 'allposts.css' %}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="{% static 'allposts.css' %}" rel="stylesheet">
     <title>{{post.publication|date:'F'}} Newsletter</title>
 </header>
 <br>
@@ -24,14 +22,14 @@ padding-top: 60px; }
 <main role="main">
     <div class="container"> <!-- spacing -->
 
-        <h2 style="font-family:Oswald" class="text-center pt-4">{{post.title}}</h2>
+        <h2 id="post-title" class="text-center pt-4">{{post.title}}</h2>
         <br/>
         <hr/>
         <div class="row">
             <div class=" container blog-post">
 
-                <p class="blog-post-meta" style="font-family:Lato">{{post.publication}} </p>
-                <p class="blurb" style="font-family: Droid Sans;padding-left:40px;">{{post.body | linebreaks }}</p>
+                <p id="post-date" class="blog-post-meta">{{post.publication}} </p>
+                <p class="blurb" style="f">{{post.body | linebreaks }}</p>
             </div>
 
             <div>

@@ -41,59 +41,6 @@
 
     <!--    <link href="album.css" rel="stylesheet">-->
 
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    .navbar{
-      position: fixed; /* Set the navbar to fixed position */
-      top: 0; /* Position the navbar at the top of the page */
-      width: 100%; /* Full width */
-      z-index: 100!important;
-      background: transparent;
-      transition:500ms ease-in;
-    }
-
-    .navbar.scrolled{
-        background: rgba(15, 48, 95, 0.8); /*red, green, blue, opacity*/
-    }
-
-    .uh{
-    text-decoration: none;
-    padding-right: 10px;
-    padding-top: 8px;
-    padding-left: 10px;
-    padding-bottom: 8px;
-    color: white;
-    rpga: (255,255,255,0.85);
-    transition:200 ms ease-in;
-    }
-
-    .uh:hover{
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    rpga: (255,255,255,1);
-    }
-
-
-
-
-
-
-    </style>
     <!-- Custom styles for this template -->
     <link href="{% static 'basetemplate.css' %}" rel="stylesheet">
 
@@ -105,7 +52,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <!-- justines change -->
-            <a class="navbar-brand" href="{% url 'home' %}" style="padding-left:30px ">
+            <a class="navbar-brand" href="{% url 'home' %}">
                 <img src="{% static 'EEClub_Logo_Thicc.png' %}" height="45" class="d-inline-block align-top"
                      alt="Electrical Engineering Club">
             </a>
@@ -115,8 +62,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto"
-                     style="font-size: 18px; padding-right:200px; font-family:Source Sans Pro">
+                <div class="navbar-nav ml-auto">
                     <a class="uh" href="{% url 'home' %}">Home</a>
                     <a class="uh" href="{% url 'club' %}">The Club</a>
                     <a class="uh" href="{% url 'team' %}">Our Team</a>
@@ -197,147 +143,6 @@
 <!--        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"-->
 <!--        crossorigin="anonymous"></script>-->
 
-<style>
-    .site-footer
-{
-  background-color:#152F4F;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#ffffff;
-}
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
-}
-.site-footer hr.small
-{
-  margin:20px 0
-}
-.site-footer h6
-{
-  color:#ffffff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:##ffffff;
-}
-.site-footer a:hover
-{
-  color:#fff;
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#ffffff
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#ffffff;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
-}
-.copyright-text
-{
-  margin:0
-}
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
-
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
-
-
-sup {
-    vertical-align: baseline;
-    font-size: smaller;
-}
-ita {
-  font-style: italic;
-}
-b{
-    font-weight: bold;
-}
-
-.testing{
-
-  text-decoration:none;
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-  }
-
-.testing li{
-
-  list-style:none;
-  display: inline-block;
-  }
-.testing a{
-
-  color: #ffffff;
-
-}
-
-
-
-
-
-</style>
-
 
 <!-- Site footer -->
 <footer class="site-footer">
@@ -385,7 +190,7 @@ b{
                     <li>ETLC E2-040 B, end of club's hallway to the right</li>
                 </ul>
                 <!-- Search form -->
-                <form class="form-inline md-form mr-auto mb-4" style="margin-top:15px;" method="GET"
+                <form class="form-inline md-form mr-auto mb-4" method="GET"
                       action="{% url 'search' %}">
                     <input class="form-control mr-sm-2" name="query" type="text" placeholder="Looking for something?"
                            aria-label="Search">
@@ -411,13 +216,11 @@ b{
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <ul class="testing">
                     <li><a href="https://www.facebook.com/UAlbertaElectricalEngineeringClub/"><i
-                            class="fa fa-facebook-square fa-3x mr-1" style="padding-right: 10px;"></i></a></li>
-                    <li><a href="https://www.instagram.com/eeclub_uofa/"><i class="fa fa-instagram fa-3x mr-1"
-                                                           style="padding-right: 10px;"></i></a></li>
-                    <li><a href="mailto:eeclub@ualberta.ca"> <i class="fa fa-envelope-square fa-3x mr-1"
-                                                                style="padding-right: 10px;"></i></a></li>
+                            class="fa fa-facebook-square fa-3x mr-1"></i></a></li>
+                    <li><a href="https://www.instagram.com/eeclub_uofa/"><i class="fa fa-instagram fa-3x mr-1"></i></a></li>
+                    <li><a href="mailto:eeclub@ualberta.ca"> <i class="fa fa-envelope-square fa-3x mr-1"></i></a></li>
                     <li><a href="https://mailchi.mp/a7f9e475f39a/ee-club-newsletter-signup"> <i
-                            class="fa fa-server fa-3x mr-1" style="padding-right: 10px;"></i></a></li>
+                            class="fa fa-server fa-3x mr-1"></i></a></li>
                 </ul>
             </div>
         </div>

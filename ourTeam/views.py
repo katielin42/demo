@@ -6,8 +6,8 @@ from .models import Team
 
 
 def home(request):
-    jrexecs = Team.objects.filter(isSenior=False)
-    srexecs = Team.objects.filter(isSenior=True)
+    jrexecs = Team.objects.filter(isFilled=True,isSenior=False)
+    srexecs = Team.objects.filter(isFilled=True,isSenior=True)
     return render(request, 'team.html', {"jrexecs": jrexecs, "srexecs":srexecs})
 
 def club(request):

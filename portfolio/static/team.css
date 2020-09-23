@@ -1,46 +1,45 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
 @import url(//fonts.googleapis.com/css?family=Lato:300,500);
 @import url(https://fonts.googleapis.com/css?family=Molengo);
-.team4 {
-  /*font-family: "Montserrat", sans-serif;*/
-  font-family: "Arial", sans-serif;
-  color: #8d97ad;
-  font-weight: 300;
 
+body {
+  padding-top: 60px;
 }
 
+/* GLOBAL DEFAULTS */
 
-.team4 h1, .team4 h2, .team4 h3, .team4 h4, .team4 h5, .team4 h6 {
-font-family: 'Arial', Georgia, Times, serif;
-    color: #3e4555;
+h2, h3, h4 {
+  font-family: 'Molengo';
+  color: #000000;
+}
+
+h3 {
+  text-align:center;
+}
+
+h5, h6 {
+  font-family: 'Droid Sans';
+}
+
+h5 {
+  line-height: 22px;
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 20px;
 }
 
 .team4 .font-weight-medium {
 	font-weight: 500;
 }
 
-.team4 h5 {
-    line-height: 22px;
-    font-size: 18px;
-}
-
 .team4 .subtitle {
     color: #8d97ad;
     line-height: 24px;
-		font-size: 20px;
 }
 
-.team4 ul li a {
-  color: #8d97ad;
-  padding-right: 15px;
-  -webkit-transition: 0.1s ease-in;
-  -o-transition: 0.1s ease-in;
-  transition: 0.1s ease-in;
+.team4 a {
+  font-family:Droid Sans;
+  font-size:14px;
 }
-
-.team4 ul li a:hover {
-  -webkit-transform: translate3d(0px, -5px, 0px);
-  transform: translate3d(0px, -5px, 0px);
-	color: #316ce8;
-}
-

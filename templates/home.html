@@ -6,9 +6,7 @@
 
 <header>
     <title>EE Club</title>
-    <link href="{% static 'home.css' %}" rel="stylesheet">
 
-    <link href="{% static 'allposts.css' %}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
@@ -17,6 +15,7 @@
 
 
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="{% static 'home.css' %}" rel="stylesheet">
 
 </header>
 
@@ -36,20 +35,18 @@
                         <div class="carousel-item active">
                             <img class="first-slide"
                                  src="{% static 'Hm.jpg' %}"
-                                 alt="EE Club Outside"
-                                 style=" height:89%; width:100%; max-width:100%; object-fit:cover; overflow: hidden;">
+                                 alt="EE Club Outside">
                             <div class="container">
                                 <div class="carousel-caption text-left">
-                                    <h1 style="font-size:64px; margin-bottom:60px">Electrical Engineering Club</h1>
-                                    <h5 style="36px">at the University of Alberta</h5>
+                                    <h1>Electrical Engineering Club</h1>
+                                    <h5>at the University of Alberta</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img class="second-slide"
                                  src="{% static 'geer-week-car.jpg' %}"
-                                 alt="EE Club members at Dewey's"
-                                 style=" height:89%; width:100%; max-width:100%; object-fit:cover; overflow: hidden;">
+                                 alt="EE Club members at Dewey's">
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h1>About Us</h1>
@@ -65,10 +62,9 @@
                         <div class="carousel-item">
                             <img class="third-slide"
                                  src="{% static 'grad_2_beavers.jpg' %}"
-                                 alt="Beavers graduated. Congrats!"
-                                 style=" height:89%; width:100%; max-width:100%; object-fit:cover; overflow: hidden;">
+                                 alt="Beavers graduated. Congrats!">
                             <div class="container">
-                                <div class="carousel-caption text-right" style="top:40;bottom:auto; color: white;">
+                                <div class="carousel-caption text-right">
                                     <h1>Our Mission</h1>
                                     <h5>As the liaison between students and
                                         the faculty, we help facilitate an education that harmonizes
@@ -91,101 +87,9 @@
             </div>
 
         </section>
-
-        <style>
-.lnr-cog {
-  color: #000000;
-  font-size: 100px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.lnr-users{
-  color: #000000;
-  font-size: 100px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-
-.lnr-book{
-  color: #000000;
-  font-size: 100px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-
-.lnr-dinner{
-  color: #000000;
-  font-size: 100px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-}
-
-.lnr-lighter{
-  color: #000000;
-  font-size: 100px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-
-}
-
-.lnr-coffee-cup{
-  color: #000000;
-  font-size: 100px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-}
-
-.header{
-  color: #000000;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body {
-  font-size: 15px;
-  font-family: sans-serif;
-  color: #555;
-
-}
-
-.titles{
-    font-size: 60px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    font-family: Molengo;
-    color: #000000;
-
-}
-p{
-font-family:Droid Sans;
-}
-
-h2{
-font-family:Molengo;
-}
-
-
-
-        </style>
-
         <!--Where the icons & functionalities of the club starts-->
-        <div class="container" style="text-align: center;">
-            <h2 class="titles" style="color: #000000"> Our Club</h2>
+        <div class="container icons">
+            <h2 class="titles"> Our Club</h2>
             <div class="row">
                 <div class="col-lg-4">
                     <i class="lnr lnr-dinner"></i>
@@ -201,9 +105,8 @@ font-family:Molengo;
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <!-- <i class="lnr lnr-lighter"></i>-->
-                    <img src="{% static 'microwave.png' %}"
-                         style=" width: 100px; height:100px;margin-bottom:0px; float:top"/>
-                    <h2 class="header" style="margin-top:10px">Microwave</h2>
+                    <img id="microwave-img" src="{% static 'microwave.png' %}">
+                    <h2 class="header microwave">Microwave</h2>
                     <p>Tired of waiting in those long long ETLC microwave lines? Drop by our clubroom! We'll let you use
                         ours, since we likely don't have a line up!</p>
                 </div><!-- /.col-lg-4 -->
@@ -230,21 +133,15 @@ font-family:Molengo;
 
 
             <!--Our events & the flipcards -->
-            <div class="container" style="text-align: center; ">
-                <h2 class="titles sectitle" style="color: #000000">Our Events</h2>
-                <div style="background-color: white;">
-                    <div class="row" style="justify-content: center;">
+            <div class="container events">
+                <h2 class="titles sectitle">Our Events</h2>
+                <div>
+                    <div id="event-row" class="row">
 
-                        <div class="col-sm-auto " style="background-color: white;">
+                        <div class="col-sm-auto ">
                             <div class="flip">
-                                <div class="front" style="background-image: url({% static 'ece-week.jpg' %})">
-                                    <h1 class="text-shadow" style="
-                                    color: rgba(255, 255, 255, 0.7);
-                                    font-family: PT Sans Narrow;
-                                    font-weight:50;
-                                    font-size: 72px;
-                                    line-height:60px;
-                                    padding-top:60px;">FIRST YEAR NIGHT</h1>
+                                <div id="first-card" class="front">
+                                    <h1 class="text-shadow">FIRST YEAR NIGHT</h1>
                                 </div>
                                 <div class="back">
                                     <h2>First Year Night</h2>
@@ -255,16 +152,10 @@ font-family:Molengo;
                             </div>
                         </div>
 
-                        <div class="col-sm-auto" style="background-color: white;">
+                        <div class="col-sm-auto">
                             <div class="flip">
-                                <div class="front" style="background-image: url({% static 'geer_week.jpg' %})">
-                                    <h1 class="text-shadow" style="
-                                    color: rgba(255, 255, 255, 0.7);
-                                    font-family: PT Sans Narrow;
-                                    font-weight:50;
-                                    font-size: 72px;
-                                    line-height:60px;
-                                    padding-top:60px;">GEER WEEK FUN</h1>
+                                <div id="second-card" class="front">
+                                    <h1 class="text-shadow">GEER WEEK FUN</h1>
                                 </div>
                                 <div class="back">
                                     <h2>GEER Week</h2>
@@ -275,16 +166,10 @@ font-family:Molengo;
                             </div>
                         </div>
 
-                        <div class="col-sm-auto" style="background-color: white;">
+                        <div class="col-sm-auto">
                             <div class="flip">
-                                <div class="front" style="background-image: url({% static 'grad-3.jpg' %})">
-                                    <h1 class="text-shadow" style="
-                                    color: rgba(255, 255, 255, 0.7);
-                                    font-family: PT Sans Narrow;
-                                    font-weight:50;
-                                    font-size: 72px;
-                                    line-height:60px;
-                                    padding-top:60px;">ECE GRAD BANQUET</h1>
+                                <div id="third-card" class="front">
+                                    <h1 class="text-shadow">ECE GRAD BANQUET</h1>
                                 </div>
                                 <div class="back">
                                     <h2>Grad Banquet</h2>
@@ -296,14 +181,8 @@ font-family:Molengo;
 
                         <div class="col-sm-auto">
                             <div class="flip">
-                                <div class="front" style="background-image: url({% static 'geer_week.jpg' %})">
-                                    <h1 class="text-shadow" style="
-                                    color: rgba(255, 255, 255, 0.7);
-                                    font-family: PT Sans Narrow;
-                                    font-weight:50;
-                                    font-size: 72px;
-                                    line-height:60px;
-                                    padding-top:60px;">COOL MERCH SALES</h1>
+                                <div id="fourth-card" class="front" style="">
+                                    <h1 class="text-shadow">COOL MERCH SALES</h1>
                                 </div>
                                 <div class="back">
                                     
