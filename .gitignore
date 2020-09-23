@@ -7,7 +7,7 @@
 
 #gitignore for demo purposes#
 eeclub_ca
-
+/portfolio/settings.py
 
 ### Django ###
 *.log
