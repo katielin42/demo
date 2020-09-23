@@ -3,7 +3,7 @@
   <img src="https://i.imgur.com/a8pExaX.png" alt="EE-Club">
 </p>
 
-This project is a [website](http://eeclub.ca), made for the Electrical Engineering Club at the University of Alberta. 
+This project is a [website](http://eeclub.ca), made for the Electrical Engineering Club at the University of Alberta. This repo is intended to be used as a demo to show people the codebase with the deployment/security stuff omitted. If you pull directly from this it will not work. 
 
 ## Getting Started
 

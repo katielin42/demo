@@ -1,7 +1,45 @@
 @import url(//fonts.googleapis.com/css?family=Verdana:300,500);
 @import url(//fonts.googleapis.com/css?family=Lato:300,500);
 @import url(//fonts.googleapis.com/css?family=Open+Sans:300,500);
-.onepost{
+
+body {
+    padding-top: 60px;
+}
+
+/* GLOBAL DEFAULTS */
+
+h2 {
+    font-family: "Lato";
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+label {
+    font-family: "Droid Sans";
+    margin-right: 20px;
+}
+
+/* PAGE STUFFS */
+
+#post-container {
+    width: 55%;
+}
+
+#page-title {
+    font-family: "Molengo";
+    margin-right: 20px;
+}
+
+#sub-btn {
+    float: right;
+    margin-right: 20px;
+}
+
+/* POSTS */
+
+.onepost {
     /*background-color: #3e4555;*/
     color:black;
     background-image: url('newsletter_bg.png');
@@ -10,26 +48,42 @@
 
     margin-bottom: 25px;
     width: 100%;
-
-}
-h2{
-    font-family: Lato;
 }
 
-h3{
-    font-family: "Montserrat", sans-serif;
-}
-
-.text{
+.text {
     padding-left: 20px;
     padding-top: 20px;
 }
-.blurb{
-    text-aligned: justified;
+
+#post-title {
+    font-family: "Oswald";
+}
+
+#post-date {
+    padding-left: 0px;
+    font-family: Lato;
+}
+
+.blurb {
+    text-align: justified;
     padding-left: 20px;
     padding-right: 20px;
    /*font-family: "Montserrat", sans-serif;*/
    font-family: Verdana;
+}
+
+.onepost > p {
+    margin-left: 20px;
+    font-family: "Droid Sans";
+}
+
+.blog-post > p {
+    font-family: Droid Sans;
+}
+
+#read-btn {
+    float: right;
+    margin-right:20px;
 }
 
 .btn btn-primary{
